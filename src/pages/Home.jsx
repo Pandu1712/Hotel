@@ -43,7 +43,7 @@ const BookingForm = () => {
     return (
         <form
             onSubmit={handleSubmit}
-            className="max-w-4xl mx-auto bg-[#143447] bg-opacity-90 backdrop-blur-md rounded-tr-3xl rounded-bl-3xl p-6 shadow-lg flex flex-col md:flex-row gap-4 items-center -mt-16 relative z-10"
+            className="max-w-4xl mx-auto bg-[#143447] bg-opacity-90 backdrop-blur-md rounded-tr-3xl rounded-bl-3xl p-6 shadow-lg flex flex-col mt-10 md:flex-row gap-4 items-center md:-mt-16 relative z-10 sm:mt-10 "
         >
             {/* Arrival Date */}
             <div className="flex flex-col flex-1">
@@ -126,8 +126,9 @@ const Home = () => {
                                 <img
                                     src={img}
                                     alt={label}
-                                    className="w-full h-[85vh] md:h-[70vh] sm:h-[50vh] object-cover"
+                                    className="w-full h-[30vh] sm:h-[70vh] md:h-[85vh] lg:h-[70vh] object-cover"
                                 />
+
                                 <p className="absolute bottom-4 left-4 bg-black bg-opacity-60 text-white px-4 py-2 rounded text-sm md:text-base">
                                     {label}
                                 </p>
@@ -204,9 +205,9 @@ const Home = () => {
             <ReviewCarousel />
             <RoomTypes />
 
-            
+
         </>
-        
+
     );
 };
 
