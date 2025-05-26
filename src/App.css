@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+/* Add this to your global CSS or Tailwind config */
+.scrollbar-hide::-webkit-scrollbar {
+  display: hide;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

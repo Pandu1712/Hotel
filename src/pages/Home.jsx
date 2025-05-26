@@ -7,6 +7,7 @@ import hotel2 from '../assets/images/hotel2.jpg';
 import hotel3 from '../assets/images/hotel3.jpg';
 import hotel4 from '../assets/images/hotel4.jpg';
 import ReviewCarousel from '../components/ReviewCarousel';
+import RoomTypes from '../components/Roomtypes';
 const BookingForm = () => {
     const [arrival, setArrival] = useState('');
     const [departure, setDeparture] = useState('');
@@ -42,7 +43,7 @@ const BookingForm = () => {
     return (
         <form
             onSubmit={handleSubmit}
-            className="max-w-4xl mx-auto bg-[#143447] bg-opacity-90 backdrop-blur-md rounded-xl p-6 shadow-lg flex flex-col md:flex-row gap-4 items-center -mt-16 relative z-10"
+            className="max-w-4xl mx-auto bg-[#143447] bg-opacity-90 backdrop-blur-md rounded-tr-3xl rounded-bl-3xl p-6 shadow-lg flex flex-col md:flex-row gap-4 items-center -mt-16 relative z-10"
         >
             {/* Arrival Date */}
             <div className="flex flex-col flex-1">
@@ -172,7 +173,7 @@ const Home = () => {
             {/* Hotel Info Section */}
             <div className="flex flex-col md:flex-row items-center justify-center gap-8 p-8 bg-white">
                 <div className="md:w-1/2 w-full">
-                    <img src={hotel4} alt="Novotel Hotel" className="w-full rounded shadow-md" />
+                    <img src={hotel4} alt="Panda Hotel" className="w-full rounded-tl-full shadow-md" />
                 </div>
                 <div className="md:w-1/2 w-full text-center md:text-left">
                     <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-4xl font-semibold text-[#143447] mb-2">
@@ -201,6 +202,7 @@ const Home = () => {
 
             <FeatureGrid />
             <ReviewCarousel />
+            <RoomTypes />
 
             
         </>
