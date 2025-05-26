@@ -6,6 +6,7 @@ import hotel1 from '../assets/images/hotel1.jpg';
 import hotel2 from '../assets/images/hotel2.jpg';
 import hotel3 from '../assets/images/hotel3.jpg';
 import hotel4 from '../assets/images/hotel4.jpg';
+import ReviewCarousel from '../components/ReviewCarousel';
 const BookingForm = () => {
     const [arrival, setArrival] = useState('');
     const [departure, setDeparture] = useState('');
@@ -199,6 +200,9 @@ const Home = () => {
             </div>
 
             <FeatureGrid />
+            <ReviewCarousel />
+
+            
         </>
         
     );
