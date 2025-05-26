@@ -68,6 +68,7 @@ const BookingForm = () => {
                 <input
                     type="date"
                     id="departure"
+                    
                     value={departure}
                     onChange={(e) => setDeparture(e.target.value)}
                     required
@@ -202,8 +203,9 @@ const Home = () => {
             </div>
 
             <FeatureGrid />
-            <ReviewCarousel />
+           
             <RoomTypes />
+             <ReviewCarousel />
 
 
         </>

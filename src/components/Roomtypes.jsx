@@ -46,7 +46,7 @@ const roomTypes = [
   {
     name: "Standard Triple Room",
     description: "Roomy option for a group of three, with extra comfort.",
-    features: ["4 Beds", "Wi-Fi", "TV", "AC", "Mini Fridge"],
+    features: ["1 Beds", "Wi-Fi", "TV", "AC", "Mini Fridge"],
     price: 3000,
     tag: "Best Seller",
     location: "Tirupati",
@@ -56,7 +56,7 @@ const roomTypes = [
   {
     name: "Standard Double Room",
     description: "Perfect for couples with all essential amenities.",
-    features: ["5 Double Bed", "Free Wi-Fi", "Mini Fridge", "AC", "TV"],
+    features: ["2 Double Bed", "Free Wi-Fi", "Mini Fridge", "AC", "TV"],
     price: 2500,
     tag: null,
     location: "Vizag",
@@ -66,7 +66,17 @@ const roomTypes = [
   {
     name: "Standard Triple Room",
     description: "Roomy option for a group of three, with extra comfort.",
-    features: ["6 Beds", "Wi-Fi", "TV", "AC", "Mini Fridge"],
+    features: ["2 Beds", "Wi-Fi", "TV", "AC", "Mini Fridge"],
+    price: 3000,
+    tag: null,
+    location: "Tirupati",
+    rating: 4.6,
+    image: "https://images.unsplash.com/photo-1648383228240-6ed939727ad6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+  },
+  {
+    name: "Standard Triple Room",
+    description: "Roomy option for a group of three, with extra comfort.",
+    features: ["1 Beds", "Wi-Fi", "TV", "AC", "Mini Fridge"],
     price: 3000,
     tag: "Best Seller",
     location: "Tirupati",
@@ -76,9 +86,9 @@ const roomTypes = [
   {
     name: "Standard Triple Room",
     description: "Roomy option for a group of three, with extra comfort.",
-    features: ["7 Beds", "Wi-Fi", "TV", "AC", "Mini Fridge"],
+    features: ["3 Beds", "Wi-Fi", "TV", "AC", "Mini Fridge"],
     price: 3000,
-    tag: "Best Seller",
+    tag: null,
     location: "Tirupati",
     rating: 4.6,
     image: "https://images.unsplash.com/photo-1648383228240-6ed939727ad6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -86,17 +96,7 @@ const roomTypes = [
   {
     name: "Standard Triple Room",
     description: "Roomy option for a group of three, with extra comfort.",
-    features: ["8 Beds", "Wi-Fi", "TV", "AC", "Mini Fridge"],
-    price: 3000,
-    tag: "Best Seller",
-    location: "Tirupati",
-    rating: 4.6,
-    image: "https://images.unsplash.com/photo-1648383228240-6ed939727ad6?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-  },
-  {
-    name: "Standard Triple Room",
-    description: "Roomy option for a group of three, with extra comfort.",
-    features: ["9 Beds", "Wi-Fi", "TV", "AC", "Mini Fridge"],
+    features: ["2 Beds", "Wi-Fi", "TV", "AC", "Mini Fridge"],
     price: 3000,
     tag: "Best Seller",
     location: "Tirupati",
