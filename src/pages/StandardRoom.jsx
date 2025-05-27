@@ -131,7 +131,7 @@ const HotelListing = () => {
                                 />
                                 <div className="p-4 space-y-2 flex-1">
                                     <div className="text-sm text-gray-500">{hotel.location}</div>
-                                    <h2 className="text-xl font-semibold">{hotel.name}</h2>
+                                    <h2 className="text-xl font-semibold">{hotel.type}</h2>
                                     <div className="text-orange-500 flex items-center gap-1">
                                         <FaStar />
                                         <span className="text-sm">200+ reviews</span>
