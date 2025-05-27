@@ -64,11 +64,7 @@ const Header = () => {
             path: '/contact',
             
         },
-        {
-            name: 'Help',
-            path: '/help',
-            
-        }
+        
     ];
 
     const currentDate = new Date().toLocaleDateString();

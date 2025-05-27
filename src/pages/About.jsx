@@ -1,9 +1,9 @@
 import React from "react";
 import { Handshake, Gem, Leaf } from 'lucide-react';
-
+import { Clock, MapPin, Utensils } from "lucide-react";
 const AboutUs = () => {
   return (
-    <div className="bg-[#143447] text-white">
+    <div className="bg-white text-[#143447]">
       {/* Hero Section */}
       <section
         className="relative h-auto md:h-[60vh] flex flex-col items-center justify-center bg-cover bg-center px-4 py-12 md:py-0"
@@ -11,10 +11,10 @@ const AboutUs = () => {
           backgroundImage: "url('https://source.unsplash.com/1600x900/?luxury,hotel')",
         }}
       >
-        <div className="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div className="absolute bg-"></div>
         <div className="relative z-10 max-w-4xl text-center">
-          <h1 className="text-3xl md:text-5xl font-bold text-[#f8de71] mb-6">About Our Hotel</h1>
-          <p className="text-base md:text-lg text-gray-300 leading-relaxed">
+          <h1 className="text-3xl md:text-5xl font-semibold text-[#143447] mb-6">About Our Hotel</h1>
+          <p className="text-base md:text-lg text-[#143447] leading-relaxed">
             Nestled in the heart of the city, Panda Living redefines luxury, comfort, and hospitality. Designed for both
             leisure and business travelers, our hotel is a sanctuary where modern elegance meets timeless charm.
             <br /><br />
@@ -39,13 +39,13 @@ const AboutUs = () => {
           className="rounded-tl-full shadow-xl"
         />
         <div>
-          <h2 className="text-3xl font-semibold text-[#f8de71] mb-4">Our Story</h2>
-          <p className="text-gray-300 leading-relaxed">
+          <h2 className="text-3xl font-bold text-[#143447] mb-4">Our Story</h2>
+          <p className="text-[#143447] leading-relaxed">
             Founded in 2005, our hotel is a symbol of luxury and modern comfort. Located at the city’s prime, we offer exceptional views, personalized service, and a memorable experience for both leisure and business travelers.
             <br /><br />
             Over the years, we’ve evolved with our guests' expectations—embracing sustainability, advancing technology, and offering curated guest experiences. Our commitment to detail, culture, and hospitality drives everything we do.
           </p>
-          <p className="text-gray-300 leading-relaxed">
+          <p className="text-[#143447] leading-relaxed">
             Founded in 2005, our hotel is a symbol of luxury and modern comfort. Located at the city’s prime, we offer exceptional views, personalized service, and a memorable experience for both leisure and business travelers.
             <br /><br />
             Over the years, we’ve evolved with our guests' expectations—embracing sustainability, advancing technology, and offering curated guest experiences. Our commitment to detail, culture, and hospitality drives everything we do.
@@ -54,21 +54,37 @@ const AboutUs = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-16 px-6 md:px-20 bg-[#1a3e52] text-center">
-        <h2 className="text-3xl font-bold text-[#f8de71] mb-10">Why Choose Panda Living?</h2>
-        <div className="grid md:grid-cols-3 gap-10">
-          {[
-            { title: "24/7 Service", desc: "Round-the-clock assistance for all your needs." },
-            { title: "Prime Location", desc: "Easily accessible from the airport and city attractions." },
-            { title: "Award-Winning Cuisine", desc: "Our chefs bring flavor and finesse to your plate." },
-          ].map((item, i) => (
-            <div key={i} className="bg-[#214d66] rounded-2xl p-6 hover:scale-105 transition duration-300">
-              <h3 className="text-2xl font-semibold text-[#f8de71] mb-3">{item.title}</h3>
-              <p className="text-gray-300">{item.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
+      <section className="py-16 px-6 md:px-20 bg-[#1a3e52]">
+      <h2 className="text-3xl font-bold text-[#f8de71] text-center mb-10">Why Choose Us</h2>
+      <div className="grid md:grid-cols-3 gap-8 text-center">
+        {[
+          {
+            title: "24/7 Service",
+            desc: "Round-the-clock assistance for all your needs.",
+            icon: <Clock className="mx-auto mb-4 text-[#f8de71]" size={40} />,
+          },
+          {
+            title: "Prime Location",
+            desc: "Easily accessible from the airport and city attractions.",
+            icon: <MapPin className="mx-auto mb-4 text-[#f8de71]" size={40} />,
+          },
+          {
+            title: "Award-Winning Cuisine",
+            desc: "Our chefs bring flavor and finesse to your plate.",
+            icon: <Utensils className="mx-auto mb-4 text-[#f8de71]" size={40} />,
+          },
+        ].map((feature, index) => (
+          <div
+            key={index}
+            className="p-6 bg-[#214d66] rounded-2xl hover:scale-105 transition transform duration-300"
+          >
+            {feature.icon}
+            <h3 className="text-2xl font-semibold mb-2 text-[#f8de71]">{feature.title}</h3>
+            <p className="text-gray-300">{feature.desc}</p>
+          </div>
+        ))}
+      </div>
+    </section>
 
       {/* Our Values */}
       <section className="py-16 px-6 md:px-20 bg-[#1a3e52]">
@@ -102,7 +118,7 @@ const AboutUs = () => {
 
       {/* Meet The Team */}
       <section className="py-16 px-6 md:px-20">
-        <h2 className="text-3xl font-bold text-[#f8de71] text-center mb-10">Meet Our Team</h2>
+        <h2 className="text-3xl font-bold text-[#143447] text-center mb-10">Meet Our Team</h2>
         <div className="grid md:grid-cols-3 gap-10 text-center">
           {[
             {
