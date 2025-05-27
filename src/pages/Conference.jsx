@@ -1,6 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import {
+  Briefcase,
+  Projector,
+  Coffee,
+  Users,
+  Headphones,
+  Hotel
+} from 'lucide-react'
 const ConferenceEvents = () => {
   const galleryImages = [
     'https://images.unsplash.com/photo-1561489396-888724a1543d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -25,14 +32,32 @@ const ConferenceEvents = () => {
         <p className="mb-6">
           Our venue provides the perfect setting for all types of professional events—from executive meetings to product launches and networking functions. Featuring modern AV equipment, multiple seating arrangements, and dedicated support, you’ll have everything you need to impress your attendees.
         </p>
-        <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-sm">
-          <li className="bg-white p-5 rounded-xl shadow">✅ Smart Board Rooms & Meeting Suites</li>
-          <li className="bg-white p-5 rounded-xl shadow">✅ Projectors, Mics, & High-Speed Wi-Fi</li>
-          <li className="bg-white p-5 rounded-xl shadow">✅ Coffee Break Stations & Catering</li>
-          <li className="bg-white p-5 rounded-xl shadow">✅ Custom Seating for up to 300 Guests</li>
-          <li className="bg-white p-5 rounded-xl shadow">✅ 24/7 Tech Support On-Site</li>
-          <li className="bg-white p-5 rounded-xl shadow">✅ Nearby Accommodations for Delegates</li>
-        </ul>
+       <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 text-sm">
+  <li className="bg-white p-5 rounded-xl shadow flex items-start gap-3">
+    <Briefcase className="text-[#143447] w-6 h-6 mt-1" />
+    <span>Smart Board Rooms & Meeting Suites</span>
+  </li>
+  <li className="bg-white p-5 rounded-xl shadow flex items-start gap-3">
+    <Projector className="text-[#143447] w-6 h-6 mt-1" />
+    <span>Projectors, Mics, & High-Speed Wi-Fi</span>
+  </li>
+  <li className="bg-white p-5 rounded-xl shadow flex items-start gap-3">
+    <Coffee className="text-[#143447] w-6 h-6 mt-1" />
+    <span>Coffee Break Stations & Catering</span>
+  </li>
+  <li className="bg-white p-5 rounded-xl shadow flex items-start gap-3">
+    <Users className="text-[#143447] w-6 h-6 mt-1" />
+    <span>Custom Seating for up to 300 Guests</span>
+  </li>
+  <li className="bg-white p-5 rounded-xl shadow flex items-start gap-3">
+    <Headphones className="text-[#143447] w-6 h-6 mt-1" />
+    <span>24/7 Tech Support On-Site</span>
+  </li>
+  <li className="bg-white p-5 rounded-xl shadow flex items-start gap-3">
+    <Hotel className="text-[#143447] w-6 h-6 mt-1" />
+    <span>Nearby Accommodations for Delegates</span>
+  </li>
+</ul>
       </section>
 
       {/* Services */}
