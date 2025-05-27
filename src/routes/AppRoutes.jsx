@@ -9,6 +9,7 @@ import StandradRoom from '../pages/StandardRoom';
 import SpecialRoom from '../pages/SpecialRoom';
 import LuxuryRoom from '../pages/Luxuryroom';
 import CategoriesRoom from '../pages/Categoriesroom';
+import BookingPage from '../pages/BookingPage';
 
 const AppRoutes = () => (
   <Router>
@@ -22,7 +23,7 @@ const AppRoutes = () => (
         <Route path='/accommodation/specialroom' element={<SpecialRoom />} />
         <Route path='/accommodation/luxuryroom' element={<LuxuryRoom />} />
         <Route path='//accommodation/categoriesroom' element={<CategoriesRoom />} />
-        
+         <Route path="/book/:hotelName" element={<BookingPage />} />
       </Routes>
     </MainLayout>
   </Router>
