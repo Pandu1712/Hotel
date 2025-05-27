@@ -12,6 +12,8 @@ const BookingForm = () => {
     const [arrival, setArrival] = useState('');
     const [departure, setDeparture] = useState('');
     const [rooms, setRooms] = useState(1);
+    const [adults, setAdults] = useState(1);
+    const [children, setChildren] = useState(1);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -68,7 +70,7 @@ const BookingForm = () => {
                 <input
                     type="date"
                     id="departure"
-                    
+
                     value={departure}
                     onChange={(e) => setDeparture(e.target.value)}
                     required
@@ -77,23 +79,46 @@ const BookingForm = () => {
             </div>
 
             {/* Rooms */}
-            <div className="flex flex-col flex-1">
-                <label htmlFor="rooms" className="mb-1 font-semibold text-[#f8de71]">
-                    Rooms
-                </label>
-                <select
-                    id="rooms"
-                    value={rooms}
-                    onChange={(e) => setRooms(e.target.value)}
-                    className="border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"
-                >
-                    {[...Array(5).keys()].map((num) => (
-                        <option key={num + 1} value={num + 1}>
-                            {num + 1} {num + 1 === 1 ? 'Room' : 'Rooms'}
-                        </option>
-                    ))}
-                </select>
-            </div>
+            {/* <div className="flex flex-col flex-1 space-y-4">
+          
+                <div>
+                    <label htmlFor="adults" className="mb-1 font-semibold text-[#f8de71]">
+                        No. of Adults
+                    </label>
+                    <select
+                        id="adults"
+                        value={adults}
+                        onChange={(e) => setAdults(parseInt(e.target.value))}
+                        className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                    >
+                        {[1, 2].map((num) => (
+                            <option key={num} value={num}>
+                                {num} {num === 1 ? 'Adult' : 'Adults'}
+                            </option>
+                        ))}
+                    </select>
+                </div>
+
+               
+                <div>
+                    <label htmlFor="children" className="mb-1 font-semibold text-[#f8de71]">
+                        No. of Children
+                    </label>
+                    <select
+                        id="children"
+                        value={children}
+                        onChange={(e) => setChildren(parseInt(e.target.value))}
+                        className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                    >
+                        {[1, 2].map((num) => (
+                            <option key={num} value={num}>
+                                {num} {num === 1 ? 'Child' : 'Children'}
+                            </option>
+                        ))}
+                    </select>
+                </div>
+            </div> */}
+
 
             {/* Book Now Button */}
             <button
@@ -203,9 +228,24 @@ const Home = () => {
             </div>
 
             <FeatureGrid />
-           
+
             <RoomTypes />
-             <ReviewCarousel />
+            <ReviewCarousel />\
+            {/* Location */}
+            <div className="max-w-6xl mx-auto px-4 py-8 mt-[-50px]"  >
+                <h2 className="text-4xl font-semibold text-center text-[#143447] mb-12">Meet Here</h2>
+                <div className="relative w-full h-[400px] rounded-lg overflow-hidden">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.123456789012!2d83.12345678901234!3d17.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a34b12345678901%3A0x1234567890123456!2sPanda%20Living%20Hotel!5e0!3m2!1sen!2sin!4v1612345678901"
+                        width="100%"
+                        height="100%"
+                        style={{ border: 0 }}
+                        allowFullScreen=""
+                        loading="lazy"
+                    ></iframe>
+                </div>
+
+            </div>
 
 
         </>

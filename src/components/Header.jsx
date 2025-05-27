@@ -29,43 +29,45 @@ const Header = () => {
             name: 'Accommodation',
             path: '/accommodation',
             submenu: [
-                { name: 'Consulting', path: '/accommodation/consulting' },
-                { name: 'Support', path: '/accommodation/support' }
+                { name: 'Standard Room', path: '/accommodation/standardroom' },
+                { name: 'Speciality Room', path: '/accommodation/specialroom' },
+                { name: 'Bed Configuration Room', path: '/accommodation/bedconfroom' },
+                { name: 'Luxury Room', path: '/accommodation/luxuryroom' },
+                { name: 'Categories Room', path: '/accommodation/categoriesroom' },
+
+
             ]
         },
         {
             name: 'Events',
             path: '/events',
             submenu: [
-                { name: 'Standard', path: '/events/standard' },
-                { name: 'Deluxe', path: '/events/deluxe' },
-                { name: 'Suite', path: '/events/suite' }
+                { name: 'Marriage', path: '/events/marriage' },
+                { name: 'Parties', path: '/events/party' },
+                { name: 'Conference', path: '/events/conference' }
             ]
         },
         {
             name: 'Dining',
             path: '/dining',
             submenu: [
-                { name: 'Daily', path: '/dining/daily' },
-                { name: 'Weekly', path: '/dining/weekly' },
-                { name: 'Monthly', path: '/dining/monthly' }
+                { name: 'The Square', path: '/dining/thesquare' },
+                { name: 'Harbour Vue', path: '/dining/harbourvue' },
+                { name: 'Zaffiran', path: '/dining/zaffiran' },
+                { name: 'Red Bowl', path: '/dining/redbowl' },
+                { name: 'Sugarr', path: '/dining/sugarr' },
+
             ]
         },
         {
             name: 'Contact',
             path: '/contact',
-            submenu: [
-                { name: 'Email', path: '/contact/email' },
-                { name: 'Phone', path: '/contact/phone' }
-            ]
+            
         },
         {
             name: 'Help',
             path: '/help',
-            submenu: [
-                { name: 'FAQs', path: '/help/faqs' },
-                { name: 'Live Chat', path: '/help/chat' }
-            ]
+            
         }
     ];
 
@@ -75,7 +77,7 @@ const Header = () => {
         <header className="bg-[#143447] shadow sticky top-0 z-50 text-white">
             <div className="max-w-screen-xl mx-auto px-4 py-4 flex items-center justify-between">
                 {/* Logo & Name */}
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-3 cursor-pointer">
                     <img src="/logo.png" alt="Logo" className="w-20 h-20 rounded-full object-cover" />
                     <span className="text-xl font-bold">Panda Living</span>
                 </div>
