@@ -36,7 +36,7 @@ const AboutUs = () => {
         <img
           src="https://images.unsplash.com/photo-1603072387865-e48a022fc541?q=80&w=2070&auto=format&fit=crop"
           alt="Hotel Lobby"
-          className="rounded-tl-full shadow-xl"
+          className="rounded-tr-full shadow-xl"
         />
         <div>
           <h2 className="text-3xl font-bold text-[#143447] mb-4">Our Story</h2>

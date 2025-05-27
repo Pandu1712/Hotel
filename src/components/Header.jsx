@@ -62,9 +62,9 @@ const Header = () => {
         {
             name: 'Contact',
             path: '/contact',
-            
+
         },
-        
+
     ];
 
     const currentDate = new Date().toLocaleDateString();
@@ -146,8 +146,12 @@ const Header = () => {
                             <a
                                 href={item.path}
                                 onClick={(e) => {
-                                    e.preventDefault();
-                                    toggleDropdownMobile(index);
+                                    if (item.submenu) {
+                                        e.preventDefault(); 
+                                        toggleDropdownMobile(index);
+                                    } else {
+                                        setMenuOpen(false); 
+                                    }
                                 }}
                                 className="w-full text-left font-medium py-2 px-3 rounded-md hover:bg-[#f8de71] hover:text-black transition block cursor-pointer"
                             >

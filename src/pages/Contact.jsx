@@ -3,8 +3,8 @@ import { Mail, Phone, MapPin } from "lucide-react";
 
 export default function ContactPage() {
   return (
-    <div className="bg-[#143447] text-white font-sans px-6 py-16">
-      <h1 className="text-4xl font-bold text-center mb-16 text-[#f8de71]">Get in Touch</h1>
+    <div className="bg-white text-white font-sans px-6 py-16">
+      <h1 className="text-4xl font-bold text-center mb-16 text-[#143447]">Get in Touch</h1>
 
       {/* Contact Cards */}
       <div className="grid md:grid-cols-3 gap-10 max-w-7xl mx-auto mb-24">
