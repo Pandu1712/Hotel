@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FaBars, FaTimes, FaUserCircle } from 'react-icons/fa';
 import { useLocation } from 'react-router-dom';
 import logo from "../assets/images/GV PNG Logo.png";
+import { Link } from "react-router-dom";
 const Header = () => {
     const [activeDropdownDesktop, setActiveDropdownDesktop] = useState(null);
     const [activeDropdownMobile, setActiveDropdownMobile] = useState(null);
@@ -22,18 +23,18 @@ const Header = () => {
     const navItems = [
         { name: 'Home', path: '/' },
         { name: 'About', path: '/about' },
+        { name: 'Gallery', path: '/gallery' },
         {
             name: 'Accommodation',
             path: '/accommodation',
             submenu: [
-                { name: 'Standard Room', path: '/accommodation/standardroom' },
-                { name: 'Speciality Room', path: '/accommodation/specialroom' },
-                { name: 'Bed Configuration Room', path: '/accommodation/bedconfroom' },
-                { name: 'Luxury Room', path: '/accommodation/luxuryroom' },
-                { name: 'Categories Room', path: '/accommodation/categoriesroom' },
+                { name: 'Premium Rooms', path: '/accommodation/premiumrooms' },
+                { name: 'Twin Share Rooms', path: '/accommodation/twinshareroom' },
+                { name: 'Standrad Rooms', path: '/accommodation/standradroom' },
+               
             ]
         },
-        {
+        /* {
             name: 'Events',
             path: '/events',
             submenu: [
@@ -41,7 +42,7 @@ const Header = () => {
                 { name: 'Parties', path: '/events/party' },
                 { name: 'Conference', path: '/events/conference' }
             ]
-        },
+        }, */
         /* {
             name: 'Dining',
             path: '/dining',
@@ -184,7 +185,7 @@ const Header = () => {
                     ))}
 
                     {/* Mobile Right Section */}
-                    <div className="mt-4 flex flex-col items-start gap-2">
+                    {/* <div className="mt-4 flex flex-col items-start gap-2">
                         <span className="text-sm text-[#143447] bg-[#f8de71] px-3 py-1 rounded-full font-semibold shadow">
                             {currentDate}
                         </span>
@@ -200,7 +201,7 @@ const Header = () => {
                             <FaUserCircle size={20} />
                             <span className="font-medium">{isLoggedIn ? "Profile" : "Login"}</span>
                         </a>
-                    </div>
+                    </div> */}
                 </div>
             )}
         </header>

@@ -15,7 +15,7 @@ const AboutUs = () => {
         <div className="relative z-10 max-w-4xl text-center">
           <h1 className="text-3xl md:text-5xl font-semibold text-[#143447] mb-6">About Our Hotel</h1>
           <p className="text-base md:text-lg text-[#143447] leading-relaxed">
-            Nestled in the heart of the city, Panda Living redefines luxury, comfort, and hospitality. Designed for both
+            Nestled in the heart of the city, Hotel Grand VadhuVar redefines luxury, comfort, and hospitality. Designed for both
             leisure and business travelers, our hotel is a sanctuary where modern elegance meets timeless charm.
             <br /><br />
             From the moment you step inside, you’re greeted by a world of sophistication. Our thoughtfully designed rooms

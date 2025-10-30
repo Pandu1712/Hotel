@@ -1,10 +1,4 @@
-// RoomTypes.jsx
-import React from "react";
-import { Link } from "react-router-dom";
-import { Star, MapPin, Monitor, Wifi, Snowflake, BedDouble, BedSingle, Refrigerator } from "lucide-react";
-import primium1 from "../assets/images/Dining.jpg"
-
-const roomTypes = [
+export const roomData = [
   {
     name: "Premium Room",
     RoomNumber: "301",
@@ -14,8 +8,12 @@ const roomTypes = [
     tag: "Best Seller",
     location: "Jaggayyapeta",
     rating: 4.5,
-    image: 
-      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop"
+    images: [
+      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0",
+      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1931&auto=format&fit=crop"
+    ]
   },
   {
     name: "Premium Room",
@@ -26,8 +24,9 @@ const roomTypes = [
     tag: "Popular",
     location: "Jaggayyapeta",
     rating: 4.3,
-    image: 
-      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop"
+    images: [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1931&auto=format&fit=crop"
+    ]
   },
   {
     name: "Premium Room",
@@ -38,8 +37,9 @@ const roomTypes = [
     tag: "Budget Friendly",
     location: "Jaggayyapeta",
     rating: 4.0,
-    image: 
-      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop"
+    images: [
+      "https://images.unsplash.com/photo-1590490360182-66389de9ad55?q=80&w=1931&auto=format&fit=crop"
+    ]
   },
   {
     name: "Premium Room",
@@ -50,8 +50,9 @@ const roomTypes = [
     tag: "Best Seller",
     location: "Jaggayyapeta",
     rating: 4.5,
-     image: 
-      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop"
+    images: [
+      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0"
+    ]
   },
   {
     name: "Premium Room",
@@ -62,8 +63,9 @@ const roomTypes = [
     tag: "Best Seller",
     location: "Jaggayyapeta",
     rating: 4.5,
-     image: 
+    images: [
       "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop"
+    ]
   },
   {
     name: "Premium Room",
@@ -74,8 +76,11 @@ const roomTypes = [
     tag: "Best Seller",
     location: "Jaggayyapeta",
     rating: 4.5,
-     image: 
+    images: [
+      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0",
       "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop"
+    ]
   },
    {
     name: "Twin Share Room",
@@ -86,8 +91,12 @@ const roomTypes = [
     tag: "Best Seller",
     location: "Jaggayyapeta",
     rating: 4.5,
-     image: 
-      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop"
+    images: [
+      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0",
+      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1931&auto=format&fit=crop"
+    ]
   },
   {
     name: "Twin Share Room",
@@ -98,8 +107,9 @@ const roomTypes = [
     tag: "Popular",
     location: "Jaggayyapeta",
     rating: 4.3,
-    image: 
-      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop"
+    images: [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1931&auto=format&fit=crop"
+    ]
   },
   {
     name: "TwinShare Room",
@@ -110,8 +120,9 @@ const roomTypes = [
     tag: "Budget Friendly",
     location: "Jaggayyapeta",
     rating: 4.0,
-    image: 
-      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop"
+    images: [
+      "https://images.unsplash.com/photo-1590490360182-66389de9ad55?q=80&w=1931&auto=format&fit=crop"
+    ]
   },
   {
     name: "Twin ShareRoom",
@@ -122,8 +133,9 @@ const roomTypes = [
     tag: "Best Seller",
     location: "Jaggayyapeta",
     rating: 4.5,
-     image: 
-      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop"
+    images: [
+      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0"
+    ]
   },
   {
     name: "Standrad Room",
@@ -134,8 +146,9 @@ const roomTypes = [
     tag: "Best Seller",
     location: "Jaggayyapeta",
     rating: 4.5,
-     image: 
+    images: [
       "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop"
+    ]
   },
   {
     name: "Standrad Room",
@@ -146,8 +159,11 @@ const roomTypes = [
     tag: "Best Seller",
     location: "Jaggayyapeta",
     rating: 4.5,
-     image: 
+    images: [
+      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0",
       "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop"
+    ]
   },
    {
     name: "Standrad Room",
@@ -158,8 +174,12 @@ const roomTypes = [
     tag: "Best Seller",
     location: "Jaggayyapeta",
     rating: 4.5,
-     image: 
-      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop"
+    images: [
+      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0",
+      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0",
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1931&auto=format&fit=crop"
+    ]
   },
   {
     name: "Standrad Room",
@@ -170,8 +190,9 @@ const roomTypes = [
     tag: "Popular",
     location: "Jaggayyapeta",
     rating: 4.3,
-     image: 
-      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop"
+    images: [
+      "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1931&auto=format&fit=crop"
+    ]
   },
   {
     name: "Standrad Room",
@@ -182,8 +203,9 @@ const roomTypes = [
     tag: "Budget Friendly",
     location: "Jaggayyapeta",
     rating: 4.0,
-     image: 
-      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop"
+    images: [
+      "https://images.unsplash.com/photo-1590490360182-66389de9ad55?q=80&w=1931&auto=format&fit=crop"
+    ]
   },
   {
     name: "Standrad Room",
@@ -194,95 +216,9 @@ const roomTypes = [
     tag: "Best Seller",
     location: "Jaggayyapeta",
     rating: 4.5,
-     image: 
-     [primium1]
+    images: [
+      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.1.0"
+    ]
   },
+  
 ];
-
-const featureIcons = {
-  "TV": <Monitor className="w-4 h-4 inline-block text-gray-600 mr-1" />,
-  "Free Wi-Fi": <Wifi className="w-4 h-4 inline-block text-gray-600 mr-1" />,
-  "Wi-Fi": <Wifi className="w-4 h-4 inline-block text-gray-600 mr-1" />,
-  "Air Conditioning": <Snowflake className="w-4 h-4 inline-block text-gray-600 mr-1" />,
-  "AC": <Snowflake className="w-4 h-4 inline-block text-gray-600 mr-1" />,
-  "1 Single Bed": <BedSingle className="w-4 h-4 inline-block text-gray-600 mr-1" />,
-  "2 Single Beds": <BedSingle className="w-4 h-4 inline-block text-gray-600 mr-1" />,
-  "1 Double Bed": <BedDouble className="w-4 h-4 inline-block text-gray-600 mr-1" />,
-  "3 Beds": <BedDouble className="w-4 h-4 inline-block text-gray-600 mr-1" />,
-  "Mini Fridge": <Refrigerator className="w-4 h-4 inline-block text-gray-600 mr-1" />
-};
-
-const RoomTypes = () => {
-  return (
-    <div className="w-full px-4">
-      <h2 className="text-4xl font-semibold text-[#143447] mb-10 text-center">Our Rooms</h2>
-
-      {/* Wrapped layout instead of scroll */}
-      <div className="flex flex-wrap gap-6 justify-center">
-        {roomTypes.map((room, index) => (
-          <div
-            key={index}
-            className="w-full sm:w-[300px] md:w-[320px] bg-white shadow-md rounded-2xl overflow-hidden relative"
-          >
-            {/* Tag */}
-            {room.tag && (
-              <span className="absolute top-2 left-2 bg-white text-sm font-semibold text-gray-700 px-3 py-1 rounded-full shadow">
-                {room.tag}
-              </span>
-            )}
-
-            {/* Image */}
-            <img
-              src={room.image}
-              alt={room.name}
-              
-              className="w-full h-48 object-cover"
-            />
-
-            {/* Details */}
-            <div className="p-4 space-y-2">
-              <h3 className="text-lg font-semibold text-[#143447] flex items-center gap-2">
-  <span>{room.name}</span>
-  <span className="text-gray-400">|</span>
-  <span>{room.RoomNumber}</span>
-</h3>
-
-             
-
-              <div className="flex items-center text-gray-500 text-sm">
-                <MapPin className="w-4 h-4 mr-1" />
-                {room.location}
-              </div>
-
-              <div className="flex items-center text-gray-600 text-sm">
-                <Star className="w-4 h-4 text-orange-500 mr-1" />
-                {room.rating}
-              </div>
-
-              <ul className="grid grid-cols-2 gap-1 text-xs text-gray-600 mt-2">
-                {room.features.map((feature, i) => (
-                  <li key={i} className="flex items-center">
-                    {featureIcons[feature] || <span className="mr-1 text-green-500">✓</span>}
-                    {feature}
-                  </li>
-                ))}
-              </ul>
-
-              <div className="mt-3 flex justify-between items-center">
-                <span className="text-lg font-bold text-[#0f2c3a]">₹ {room.price}</span>
-                <Link
-  to={`/room/${room.RoomNumber}`}
-  className="bg-[#143447] text-white text-sm px-4 py-1 rounded hover:bg-[#0f2c3a]"
->
-  View Details
-</Link>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
-
-export default RoomTypes;

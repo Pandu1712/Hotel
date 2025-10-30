@@ -12,25 +12,28 @@ export default function ContactPage() {
         <div className="bg-[#214d66] p-6 rounded-xl shadow-lg text-center hover:scale-105 transition">
           <MapPin className="w-10 h-10 mx-auto mb-4 text-[#f8de71]" />
           <h2 className="text-xl font-semibold mb-2 text-[#f8de71]">Address</h2>
-          <p className="font-semibold">Wellfield Group Contracting</p>
-          <p>148 Tuma Street<br />Denver CO 80223</p>
+          <p className="font-semibold">Tumuluri’s plaza, sathya electronics building</p>
+          <p>S.No - 300/3, <br />jaggayyapeta</p>
           <div className="mt-4">
-            <p className="font-semibold">Northern Division Office</p>
-            <p>Windsor, CO 30550</p>
+            <p className="font-semibold">Ntr district </p>
+            <p>Andhra Pradesh,521175 </p>
           </div>
         </div>
-
+{/* S.No - 300/3, 
+3rd floor,Tumuluri’s plaza, sathya electronics building, jaggayyapeta 
+Ntr district 
+Andhra Pradesh 
+521175 */}
         {/* Phone */}
         <div className="bg-[#214d66] p-6 rounded-xl shadow-lg text-center hover:scale-105 transition">
           <Phone className="w-10 h-10 mx-auto mb-4 text-[#f8de71]" />
           <h2 className="text-xl font-semibold mb-2 text-[#f8de71]">Phone</h2>
-          <p className="font-semibold">Wellfield Group Contracting</p>
+           <p className="font-semibold">Tumuluri’s plaza, sathya electronics building</p>
           <p>303.428.20ff<br />303.202.0646 (fax)</p>
           <div className="mt-4">
-            <p className="font-semibold">Service Dept.</p>
-            <p>303.428.20ff<br />303.202.0085 (fax)</p>
-            <p className="mt-2 font-semibold">Wyoming Office</p>
-            <p>307.767.7967</p>
+           <p>S.No - 300/3, <br />jaggayyapeta</p>
+        
+            <p>+91 9492047799</p>
           </div>
         </div>
 
@@ -38,9 +41,9 @@ export default function ContactPage() {
         <div className="bg-[#214d66] p-6 rounded-xl shadow-lg text-center hover:scale-105 transition">
           <Mail className="w-10 h-10 mx-auto mb-4 text-[#f8de71]" />
           <h2 className="text-xl font-semibold mb-2 text-[#f8de71]">Email</h2>
-          <p><span className="font-semibold">Proposals:</span><br />Info@wellfieldgroup.com</p>
-          <p className="mt-4"><span className="font-semibold">Service Calls:</span><br />service@wellfieldcontracting.com</p>
-          <p className="mt-4"><span className="font-semibold">Careers:</span><br />careers@wellfieldcontracting.com</p>
+          <p><span className="font-semibold">Proposals:</span><br />hotelgrandvadhuvar@gmail.com</p>
+          <p className="mt-4"><span className="font-semibold">Service Calls:</span><br />hotelgrandvadhuvar@gmail.com</p>
+         {/*  <p className="mt-4"><span className="font-semibold">Careers:</span><br />careers@wellfieldcontracting.com</p> */}
         </div>
       </div>
 
@@ -48,7 +51,7 @@ export default function ContactPage() {
       <div className="max-w-4xl mx-auto bg-[#214d66] rounded-2xl shadow-lg p-10">
         <h2 className="text-3xl font-bold text-center mb-6 text-[#f8de71]">Send Us a Message</h2>
         <p className="text-center mb-8 text-gray-200">
-          For job inquiries, please apply through our careers page. A representative will follow up once we review your application.
+          For Room inquiries, please send message throug contact page. A representative will follow up once we review your application.
         </p>
 
         <form className="grid grid-cols-1 md:grid-cols-2 gap-6">

@@ -98,33 +98,7 @@ const FeatureGrid = () => {
                                 <h3 className="text-2xl font-semibold text-[#143447] mb-2">{title}</h3>
                                 <p className="text-gray-700 text-base leading-relaxed">{desc}</p>
                             </div>
-                            <button
-                                className="
-                  self-start
-                  bg-gradient-to-r
-                  from-[#143447]
-                  to-[#0f2c3a]
-                  text-white
-                  px-6
-                  py-2
-                  rounded-full
-                  font-medium
-                  shadow-md
-                  transition
-                  duration-300
-                  hover:from-[#0f2c3a]
-                  hover:to-[#143447]
-                  focus:outline-none
-                  focus:ring-4
-                  focus:ring-[#143447]/50
-                "
-                                onClick={(e) => {
-                                    e.stopPropagation();
-                                    navigate(path);
-                                }}
-                            >
-                                View More
-                            </button>
+                            
                         </div>
                     </div>
                 ))}

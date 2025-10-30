@@ -42,94 +42,8 @@ const BookingForm = () => {
             image: 'https://source.unsplash.com/600x400/?parking,garage',
         },
     ];
-    return (
-        <form
-            onSubmit={handleSubmit}
-            className="max-w-4xl mx-auto bg-[#143447] bg-opacity-90 backdrop-blur-md rounded-tr-3xl rounded-bl-3xl p-6 shadow-lg flex flex-col mt-10 md:flex-row gap-4 items-center md:-mt-16 relative z-10 sm:mt-10 "
-        >
-            {/* Arrival Date */}
-            <div className="flex flex-col flex-1">
-                <label htmlFor="arrival" className="mb-1 font-semibold text-[#f8de71]">
-                    Arrival Date
-                </label>
-                <input
-                    type="date"
-                    id="arrival"
-                    value={arrival}
-                    onChange={(e) => setArrival(e.target.value)}
-                    required
-                    className="border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"
-                />
-            </div>
-
-            {/* Departure Date */}
-            <div className="flex flex-col flex-1">
-                <label htmlFor="departure" className="mb-1 font-semibold text-[#f8de71]">
-                    Departure Date
-                </label>
-                <input
-                    type="date"
-                    id="departure"
-
-                    value={departure}
-                    onChange={(e) => setDeparture(e.target.value)}
-                    required
-                    className="border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"
-                />
-            </div>
-
-            {/* Rooms */}
-            {/* <div className="flex flex-col flex-1 space-y-4">
-          
-                <div>
-                    <label htmlFor="adults" className="mb-1 font-semibold text-[#f8de71]">
-                        No. of Adults
-                    </label>
-                    <select
-                        id="adults"
-                        value={adults}
-                        onChange={(e) => setAdults(parseInt(e.target.value))}
-                        className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"
-                    >
-                        {[1, 2].map((num) => (
-                            <option key={num} value={num}>
-                                {num} {num === 1 ? 'Adult' : 'Adults'}
-                            </option>
-                        ))}
-                    </select>
-                </div>
-
-               
-                <div>
-                    <label htmlFor="children" className="mb-1 font-semibold text-[#f8de71]">
-                        No. of Children
-                    </label>
-                    <select
-                        id="children"
-                        value={children}
-                        onChange={(e) => setChildren(parseInt(e.target.value))}
-                        className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-yellow-400"
-                    >
-                        {[1, 2].map((num) => (
-                            <option key={num} value={num}>
-                                {num} {num === 1 ? 'Child' : 'Children'}
-                            </option>
-                        ))}
-                    </select>
-                </div>
-            </div> */}
-
-
-            {/* Book Now Button */}
-            <button
-                type="submit"
-                className="bg-[#f8de71] hover:bg-yellow-500 text-gray-900 font-bold px-6 py-3 rounded-tr-2xl rounded-bl-2xl transition duration-300 md:self-end"
-            >
-                Search
-            </button>
-        </form>
-    );
-};
+  
+}; 
 
 const Home = () => {
     return (
@@ -144,9 +58,9 @@ const Home = () => {
                     transitionTime={800}
                     className="w-full"
                 >
-                    {[{ img: hotel1, label: 'Luxurious Lobby' },
-                    { img: hotel2, label: 'Deluxe Rooms' },
-                    { img: hotel3, label: 'Scenic Pool' }]
+                    {[{ img: hotel1, label: 'Premium Rooms' },
+                    { img: hotel2, label: 'Twin Share' },
+                    { img: hotel3, label: 'Standrad Rooms' }]
                         .map(({ img, label }, i) => (
                             <div className="relative" key={i}>
                                 <img
@@ -168,32 +82,32 @@ const Home = () => {
 
             <div className="max-w-6xl mx-auto px-4 py-8">
                 <h1 className="text-4xl font-bold text-center mb-6 text-[#143447]">
-                    Welcome to Panda Living Hotel
+                    Welcome to Hotel Grand VadhuVar
                 </h1>
                 <p className="text-lg text-center text-gray-700 mb-8">
                     Experience luxury and comfort in the heart of the city. Book your stay with us today!
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <div className="bg-white p-6 rounded-lg shadow-lg">
-                        <h2 className="text-2xl font-semibold mb-4 text-[#143447]">Luxurious Rooms</h2>
+                        <h2 className="text-2xl font-semibold mb-4 text-[#143447]">Premium Rooms</h2>
                         <p className="text-gray-600 mb-4">
-                            Enjoy our elegantly designed rooms with stunning views and top-notch amenities.
+                            "Enjoy a spacious, elegantly designed room with modern interiors and warm lighting. Step onto your private balcony for fresh air and beautiful views. Perfect for comfort, style, and a touch of open-air luxury."
                         </p>
-                        <a href="/accommodation" className="text-[#b69d3a] hover:underline">Explore Rooms</a>
+                       {/*  <a href="/accommodation" className="text-[#b69d3a] hover:underline">Explore Rooms</a> */}
                     </div>
                     <div className="bg-white p-6 rounded-lg shadow-lg">
-                        <h2 className="text-2xl font-semibold mb-4 text-[#143447]">Dining Experience</h2>
+                        <h2 className="text-2xl font-semibold mb-4 text-[#143447]">Twin Share</h2>
                         <p className="text-gray-600 mb-4">
-                            Savor exquisite dishes crafted by our world-class chefs in a serene ambiance.
+                            "Twin Share Room – A comfortable and stylish room designed for two guests. Features modern interiors, cozy twin beds, and a relaxing ambiance. Perfect for friends or colleagues seeking comfort and convenience."
                         </p>
-                        <a href="/dining" className="text-[#b69d3a] hover:underline">View Menu</a>
+                        {/* <a href="/dining" className="text-[#b69d3a] hover:underline">View Menu</a> */}
                     </div>
                     <div className="bg-white p-6 rounded-lg shadow-lg">
-                        <h2 className="text-2xl font-semibold mb-4 text-[#143447]">Events & Conferences</h2>
+                        <h2 className="text-2xl font-semibold mb-4 text-[#143447]">Standrad Room</h2>
                         <p className="text-gray-600 mb-4">
-                            Host your events in our state-of-the-art facilities with personalized service.
+                            "A cozy and well-furnished room designed for a comfortable stay. Features essential amenities and modern interiors for a pleasant experience. Perfect for budget-friendly travelers who value simplicity and comfort."
                         </p>
-                        <a href="/events" className="text-[#b69d3a] hover:underline">Book Event Space</a>
+                      {/*   <a href="/events" className="text-[#b69d3a] hover:underline">Book Event Space</a> */}
                     </div>
                 </div>
             </div>
@@ -204,7 +118,7 @@ const Home = () => {
                 </div>
                 <div className="md:w-1/2 w-full text-center md:text-left">
                     <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-4xl font-semibold text-[#143447] mb-2">
-                        Panda Living Hotel
+                        Hotel Grand VadhuVar
                     </h2>
 
                     <p className="text-gray-600 italic mb-4">Experience comfort amidst luxury</p>
