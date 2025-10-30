@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes, FaUserCircle } from 'react-icons/fa';
 import { useLocation } from 'react-router-dom';
-
+import logo from "../assets/images/GV PNG Logo.png";
 const Header = () => {
     const [activeDropdownDesktop, setActiveDropdownDesktop] = useState(null);
     const [activeDropdownMobile, setActiveDropdownMobile] = useState(null);
@@ -61,8 +61,8 @@ const Header = () => {
             <div className="max-w-screen-xl mx-auto px-4 py-4 flex items-center justify-between">
                 {/* Logo */}
                 <div className="flex items-center gap-3 cursor-pointer">
-                    <img src="/logo.png" alt="Logo" className="w-20 h-20 rounded-full object-cover" />
-                    <span className="text-xl font-bold">Panda Living</span>
+                   <img src={logo} alt="Logo" className="w-20 h-20 rounded-full object-cover" />
+                    <span className="text-xl font-bold">Hotel Grand VadhuVar</span>
                 </div>
 
                 {/* Desktop Navigation */}
@@ -112,17 +112,17 @@ const Header = () => {
                         {currentDate}
                     </span>
 
-                    <button className="bg-[#f8de71] text-[#143447] font-semibold px-4 py-2 rounded-tl-2xl rounded-br-2xl hover:bg-yellow-300 transition">
+                    {/* <button className="bg-[#f8de71] text-[#143447] font-semibold px-4 py-2 rounded-tl-2xl rounded-br-2xl hover:bg-yellow-300 transition">
                         Book Now
-                    </button>
+                    </button> */}
 
-                    <a
+                   {/*  <a
                         href={isLoggedIn ? "/profile" : "/login"}
                         className="ml-2 flex items-center gap-2 text-white hover:text-[#f8de71] transition"
                     >
                         <FaUserCircle size={24} />
                         <span className="font-medium">{isLoggedIn ? "Profile" : "Login"}</span>
-                    </a>
+                    </a> */}
 
                     {/* 
                     <a
