@@ -150,7 +150,7 @@ const Home = () => {
                 <h2 className="text-4xl font-semibold text-center text-[#143447] mb-12">Meet Here</h2>
                 <div className="relative w-full h-[400px] rounded-lg overflow-hidden">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.123456789012!2d83.12345678901234!3d17.123456789012345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a34b12345678901%3A0x1234567890123456!2sPanda%20Living%20Hotel!5e0!3m2!1sen!2sin!4v1612345678901"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3817.603690206045!2d80.0982708!3d16.895488099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35a900419edd85%3A0xbd1626cce20b8bc3!2sHotel%20Grand%20VadhuVar!5e0!3m2!1sen!2sin!4v1761828779315!5m2!1sen!2sin"
                         width="100%"
                         height="100%"
                         style={{ border: 0 }}

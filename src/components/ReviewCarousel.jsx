@@ -85,14 +85,14 @@ const ReviewCarousel = () => {
                 ))}
             </Swiper>
 
-            <div className="text-center mt-10">
+          {/*   <div className="text-center mt-10">
                 <button
                     className="px-6 py-3 bg-[#143447] hover:bg-[#0f2c3a] text-white rounded-full shadow-lg hover:shadow-xl transition"
                     onClick={() => window.location.href = "/reviews"}
                 >
                     View All Reviews
                 </button>
-            </div>
+            </div> */}
         </div>
     );
 };

@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
+import ScrollToTop from "../components/ScrollToTop";
 
 // Main Pages
 import Home from "../pages/Home";
@@ -17,6 +18,7 @@ import BookingPage from "../pages/BookingPage";
 const AppRoutes = () => (
   <Router>
     <MainLayout>
+       <ScrollToTop /> {/* ✅ this ensures scroll resets on route change */}
       <Routes>
         {/* 🌐 Main Pages */}
         <Route path="/" element={<Home />} />
