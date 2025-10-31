@@ -33,7 +33,8 @@ Andhra Pradesh 
           <div className="mt-4">
            <p>S.No - 300/3, <br />jaggayyapeta</p>
         
-            <p>+91 9492047799</p>
+            <p>+91 94920 47799</p>
+              <p>+91 94920 57799</p>
           </div>
         </div>
 

@@ -5,28 +5,29 @@ const features = [
     {
         title: "Accommodation",
         desc: "Experience our luxurious rooms with modern amenities and elegant interiors.",
-        image: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761898926/Acommo_lqowee.jpg",
+        image: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761898926/Acommo_lqowee.jpg",loading: "lazy",
+
         path: "/accommodation",
         icon: "🏨",
     },
     {
         title: "Events",
         desc: "Perfect venues for weddings, conferences, and corporate meetings.",
-        image: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761898932/Event_om3c7p.jpg",
+        image: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761898932/Event_om3c7p.jpg",loading: "lazy",
         path: "/events",
         icon: "🎉",
     },
     {
         title: "Dining",
         desc: "Savor gourmet dishes crafted by top chefs in our fine dining spaces.",
-        image: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761898925/Dining_t7oqdv.jpg",
+        image: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761898925/Dining_t7oqdv.jpg",loading: "lazy",
         path: "/dining",
         icon: "🍽️",
     },
     {
         title: "Parking",
         desc: "Secure and spacious parking available 24/7 for all guests.",
-        image: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761898919/Parking_hmmmwm.jpg",
+        image: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761898919/Parking_hmmmwm.jpg",loading: "lazy",
         path: "/parking",
         icon: "🅿️",
     },

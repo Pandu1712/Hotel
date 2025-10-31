@@ -8,7 +8,7 @@ const AboutUs = () => {
       <section
         className="relative h-auto md:h-[60vh] flex flex-col items-center justify-center bg-cover bg-center px-4 py-12 md:py-0"
         style={{
-          backgroundImage: "url('https://source.unsplash.com/1600x900/?luxury,hotel')",
+          backgroundImage: "url('https://source.unsplash.com/1600x900/?luxury,hotel')",Loading: "lazy",
         }}
       >
         <div className="absolute bg-"></div>
@@ -34,7 +34,7 @@ const AboutUs = () => {
       {/* Our Story */}
       <section className="py-16 px-6 md:px-20 grid md:grid-cols-2 gap-12 items-center">
         <img
-          src="https://res.cloudinary.com/dd4oiwnep/image/upload/v1761833369/hotelbed_feytbk.jpg"
+          src="https://res.cloudinary.com/dd4oiwnep/image/upload/v1761833369/hotelbed_feytbk.jpg"loading="lazy"
           alt="Hotel Lobby"
           className="rounded-tr-full shadow-xl"
         />

@@ -1,18 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import FeatureGrid from '../components/FeatureGrid';
 import RoomTypes from '../components/Roomtypes';
 const BookingForm = () => {
-    const [arrival, setArrival] = useState('');
-    const [departure, setDeparture] = useState('');
-    const [rooms, setRooms] = useState(1);
    
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        alert(`Booking from ${arrival} to ${departure} for ${rooms} room(s)`);
-        // Replace alert with real booking logic/API call
-    };
+
     
 }; 
 

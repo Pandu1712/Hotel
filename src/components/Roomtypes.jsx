@@ -1,7 +1,7 @@
 // RoomTypes.jsx
 import React from "react";
 import { Link } from "react-router-dom";
-import { Bed,Star, MapPin, Monitor, Snowflake, BedDouble, BedSingle, Refrigerator } from "lucide-react";
+import { Bed,Star, MapPin, Monitor, Snowflake, BedDouble, BedSingle, Refrigerator,PhoneCall } from "lucide-react";
 
 
 const roomTypes = [
@@ -9,198 +9,198 @@ const roomTypes = [
     name: "Premium Room",
     RoomNumber: "301",
     description: "Ideal for solo travelers. Compact, comfortable and efficient.",
-    features: ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply"],
+    features: ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply","Intercom"],
     price: 2900,
     tag: "Best Seller",
     location: "Jaggayyapeta",
     rating: 4.5,
     image: 
-      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897624/prebed2_fzmgv2.jpg"
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897624/prebed2_fzmgv2.jpg",loading: "lazy",
   },
   {
     name: "Premium Room",
     RoomNumber: "302",
     description: "A comfortable and stylish room designed for two guests.",
-    features:  ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply"],
+    features:  ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply","Intercom"],
     price: 2900,
     tag: "Popular",
     location: "Jaggayyapeta",
     rating: 4.3,
     image: 
-      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897624/prebed2_fzmgv2.jpg"
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897624/prebed2_fzmgv2.jpg",loading: "lazy",
   },
   {
     name: "Premium Room",
     RoomNumber: "303",
     description: "A cozy and well-furnished room designed for a comfortable stay.",
-    features:  ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply"],
+    features:  ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply","Intercom"],
     price: 2900,
     tag: "Budget Friendly",
     location: "Jaggayyapeta",
     rating: 4.0,
     image: 
-      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897624/prebed2_fzmgv2.jpg"
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897624/prebed2_fzmgv2.jpg",loading: "lazy",
   },
   {
     name: "Premium Room",
     RoomNumber: "314",
     description: "Ideal for solo travelers. Compact, comfortable and efficient.",
-    features: ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply"],
+    features: ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply","Intercom"],
     price: 2900,
     tag: "Best Seller",
     location: "Jaggayyapeta",
     rating: 4.5,
      image: 
-      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897624/prebed2_fzmgv2.jpg"
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897624/prebed2_fzmgv2.jpg",loading: "lazy",
   },
   {
     name: "Premium Room",
     RoomNumber: "315",
     description: "Ideal for solo travelers. Compact, comfortable and efficient.",
-    features: ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply"],
+    features: ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply","Intercom"],
     price: 2900,
     tag: "Best Seller",
     location: "Jaggayyapeta",
     rating: 4.5,
      image: 
-      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897624/prebed2_fzmgv2.jpg"
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897624/prebed2_fzmgv2.jpg",loading: "lazy",
   },
   {
     name: "Premium Room",
     RoomNumber: "316",
     description: "Ideal for solo travelers. Compact, comfortable and efficient.",
-    features: ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply"],
+    features: ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply","Intercom"],
     price: 2900,
     tag: "Best Seller",
     location: "Jaggayyapeta",
     rating: 4.5,
      image: 
-      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897624/prebed2_fzmgv2.jpg"
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897624/prebed2_fzmgv2.jpg",loading: "lazy",
   },
    {
     name: "Twin Share Room",
     RoomNumber: "304",
     description: "Ideal for solo travelers. Compact, comfortable and efficient.",
-    features: ["Bed", "TV", "Air Conditioning"],
+    features: ["Bed", "TV", "Air Conditioning","Intercom"],
     price: 2500,
     tag: "Best Seller",
     location: "Jaggayyapeta",
     rating: 4.5,
      image: 
-      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897614/twinshare1_lvbllg.jpg"
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897614/twinshare1_lvbllg.jpg",loading: "lazy",
   },
   {
     name: "Twin Share Room",
     RoomNumber: "305",
     description: "A comfortable and stylish room designed for two guests.",
-    features:  ["Bed", "TV", "Air Conditioning"],
+    features:  ["Bed", "TV", "Air Conditioning","Intercom"],
     price: 2500,
     tag: "Popular",
     location: "Jaggayyapeta",
     rating: 4.3,
     image: 
-      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897614/twinshare1_lvbllg.jpg"
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897614/twinshare1_lvbllg.jpg",loading: "lazy",
   },
   {
     name: "TwinShare Room",
     RoomNumber: "312",
     description: "A cozy and well-furnished room designed for a comfortable stay.",
-    features: ["Bed", "TV", "Air Conditioning"],
+    features: ["Bed", "TV", "Air Conditioning","Intercom"],
     price: 2500,
     tag: "Budget Friendly",
     location: "Jaggayyapeta",
     rating: 4.0,
     image: 
-      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897614/twinshare1_lvbllg.jpg"
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897614/twinshare1_lvbllg.jpg",loading: "lazy",
   },
   {
     name: "Twin ShareRoom",
     RoomNumber: "313",
     description: "Ideal for solo travelers. Compact, comfortable and efficient.",
-    features: ["Bed", "TV", "Air Conditioning"],
+    features: ["Bed", "TV", "Air Conditioning","Intercom"],
     price: 2500,
     tag: "Best Seller",
     location: "Jaggayyapeta",
     rating: 4.5,
      image: 
-      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897614/twinshare1_lvbllg.jpg"
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897614/twinshare1_lvbllg.jpg",loading: "lazy",
   },
   {
     name: "Standrad Room",
     RoomNumber: "306",
     description: "Ideal for solo travelers. Compact, comfortable and efficient.",
-    features: ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply"],
+    features: ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply","Intercom"],
     price: 2500,
     tag: "Best Seller",
     location: "Jaggayyapeta",
     rating: 4.5,
      image: 
-      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761833369/hotelbed_feytbk.jpg"
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761833369/hotelbed_feytbk.jpg",loading: "lazy",
   },
   {
     name: "Standrad Room",
     RoomNumber: "307",
     description: "Ideal for solo travelers. Compact, comfortable and efficient.",
-    features: ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply"],
+    features: ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply","Intercom"],
     price: 2500,
     tag: "Best Seller",
     location: "Jaggayyapeta",
     rating: 4.5,
      image: 
-      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761833369/hotelbed_feytbk.jpg"
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761833369/hotelbed_feytbk.jpg",loading: "lazy",
   },
    {
     name: "Standrad Room",
     RoomNumber: "308",
     description: "Ideal for solo travelers. Compact, comfortable and efficient.",
-    features: ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply"],
+    features: ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply","Intercom"],
     price: 2500,
     tag: "Best Seller",
     location: "Jaggayyapeta",
     rating: 4.5,
      image: 
-      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761833369/hotelbed_feytbk.jpg"
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761833369/hotelbed_feytbk.jpg",loading: "lazy",
   },
   {
     name: "Standrad Room",
     RoomNumber: "309",
     description: "A comfortable and stylish room designed for two guests.",
-    features:  ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply"],
+    features:  ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply","Intercom"],
     price: 2500,
     tag: "Popular",
     location: "Jaggayyapeta",
     rating: 4.3,
      image: 
-      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761833369/hotelbed_feytbk.jpg"
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761833369/hotelbed_feytbk.jpg",loading: "lazy",
   },
   {
     name: "Standrad Room",
     RoomNumber: "310",
     description: "A cozy and well-furnished room designed for a comfortable stay.",
-    features: ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply"],
+    features: ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply","Intercom"],
     price: 2500,
     tag: "Budget Friendly",
     location: "Jaggayyapeta",
     rating: 4.0,
      image: 
-      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761833369/hotelbed_feytbk.jpg"
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761833369/hotelbed_feytbk.jpg",loading: "lazy",
   },
   {
     name: "Standrad Room",
     RoomNumber: "311",
     description: "Ideal for solo travelers. Compact, comfortable and efficient.",
-    features: ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply"],
+    features: ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply","Intercom"],
     price: 2500,
     tag: "Best Seller",
     location: "Jaggayyapeta",
     rating: 4.5,
-     image:"https://res.cloudinary.com/dd4oiwnep/image/upload/v1761833369/hotelbed_feytbk.jpg"
+     image:"https://res.cloudinary.com/dd4oiwnep/image/upload/v1761833369/hotelbed_feytbk.jpg",loading: "lazy",
   },
 ];
 
 const featureIcons = {
   Bed: <Bed className="w-4 h-4 inline-block text-gray-600 mr-1" />,
- 
+  "Intercom": <PhoneCall className="w-4 h-4 inline-block text-gray-600 mr-1" />,
   "TV": <Monitor className="w-4 h-4 inline-block text-gray-600 mr-1" />,
   "Air Conditioning": <Snowflake className="w-4 h-4 inline-block text-gray-600 mr-1" />,
   "AC": <Snowflake className="w-4 h-4 inline-block text-gray-600 mr-1" />,

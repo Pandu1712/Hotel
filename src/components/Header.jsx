@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import { FaBars, FaTimes, FaUserCircle } from 'react-icons/fa';
+import { FaBars, FaTimes } from 'react-icons/fa';
 import { useLocation } from 'react-router-dom';
 import logo from "../assets/images/GV PNG Logo.png";
-import { Link } from "react-router-dom";
+
 const Header = () => {
     const [activeDropdownDesktop, setActiveDropdownDesktop] = useState(null);
     const [activeDropdownMobile, setActiveDropdownMobile] = useState(null);
     const [menuOpen, setMenuOpen] = useState(false);
-    const [isLoggedIn, setIsLoggedIn] = useState(false); // Simulated auth state
+   
 
     const toggleDropdownDesktop = (index) => {
         setActiveDropdownDesktop(activeDropdownDesktop === index ? null : index);
