@@ -1,208 +1,207 @@
 // RoomTypes.jsx
 import React from "react";
 import { Link } from "react-router-dom";
-import { Star, MapPin, Monitor, Wifi, Snowflake, BedDouble, BedSingle, Refrigerator } from "lucide-react";
-import primium1 from "../assets/images/Dining.jpg"
+import { Bed,Star, MapPin, Monitor, Snowflake, BedDouble, BedSingle, Refrigerator } from "lucide-react";
+
 
 const roomTypes = [
   {
     name: "Premium Room",
     RoomNumber: "301",
     description: "Ideal for solo travelers. Compact, comfortable and efficient.",
-    features: ["Bed", "Free Wi-Fi", "TV", "Air Conditioning"],
+    features: ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply"],
     price: 2900,
     tag: "Best Seller",
     location: "Jaggayyapeta",
     rating: 4.5,
     image: 
-      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop"
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897624/prebed2_fzmgv2.jpg"
   },
   {
     name: "Premium Room",
     RoomNumber: "302",
     description: "A comfortable and stylish room designed for two guests.",
-    features: ["2 Single Beds", "Free Wi-Fi", "TV", "Air Conditioning"],
+    features:  ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply"],
     price: 2900,
     tag: "Popular",
     location: "Jaggayyapeta",
     rating: 4.3,
     image: 
-      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop"
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897624/prebed2_fzmgv2.jpg"
   },
   {
     name: "Premium Room",
     RoomNumber: "303",
     description: "A cozy and well-furnished room designed for a comfortable stay.",
-    features: ["Bed", "Wi-Fi", "TV"],
+    features:  ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply"],
     price: 2900,
     tag: "Budget Friendly",
     location: "Jaggayyapeta",
     rating: 4.0,
     image: 
-      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop"
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897624/prebed2_fzmgv2.jpg"
   },
   {
     name: "Premium Room",
     RoomNumber: "314",
     description: "Ideal for solo travelers. Compact, comfortable and efficient.",
-    features: ["Bed", "Free Wi-Fi", "TV", "Air Conditioning"],
+    features: ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply"],
     price: 2900,
     tag: "Best Seller",
     location: "Jaggayyapeta",
     rating: 4.5,
      image: 
-      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop"
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897624/prebed2_fzmgv2.jpg"
   },
   {
     name: "Premium Room",
     RoomNumber: "315",
     description: "Ideal for solo travelers. Compact, comfortable and efficient.",
-    features: ["Bed", "Free Wi-Fi", "TV", "Air Conditioning"],
+    features: ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply"],
     price: 2900,
     tag: "Best Seller",
     location: "Jaggayyapeta",
     rating: 4.5,
      image: 
-      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop"
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897624/prebed2_fzmgv2.jpg"
   },
   {
     name: "Premium Room",
     RoomNumber: "316",
     description: "Ideal for solo travelers. Compact, comfortable and efficient.",
-    features: ["Bed", "Free Wi-Fi", "TV", "Air Conditioning"],
+    features: ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply"],
     price: 2900,
     tag: "Best Seller",
     location: "Jaggayyapeta",
     rating: 4.5,
      image: 
-      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop"
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897624/prebed2_fzmgv2.jpg"
   },
    {
     name: "Twin Share Room",
     RoomNumber: "304",
     description: "Ideal for solo travelers. Compact, comfortable and efficient.",
-    features: ["Bed", "Free Wi-Fi", "TV", "Air Conditioning"],
+    features: ["Bed", "TV", "Air Conditioning"],
     price: 2500,
     tag: "Best Seller",
     location: "Jaggayyapeta",
     rating: 4.5,
      image: 
-      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop"
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897614/twinshare1_lvbllg.jpg"
   },
   {
     name: "Twin Share Room",
     RoomNumber: "305",
     description: "A comfortable and stylish room designed for two guests.",
-    features: ["2 Single Beds", "Free Wi-Fi", "TV", "Air Conditioning"],
+    features:  ["Bed", "TV", "Air Conditioning"],
     price: 2500,
     tag: "Popular",
     location: "Jaggayyapeta",
     rating: 4.3,
     image: 
-      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop"
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897614/twinshare1_lvbllg.jpg"
   },
   {
     name: "TwinShare Room",
     RoomNumber: "312",
     description: "A cozy and well-furnished room designed for a comfortable stay.",
-    features: ["Bed", "Wi-Fi", "TV"],
+    features: ["Bed", "TV", "Air Conditioning"],
     price: 2500,
     tag: "Budget Friendly",
     location: "Jaggayyapeta",
     rating: 4.0,
     image: 
-      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop"
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897614/twinshare1_lvbllg.jpg"
   },
   {
     name: "Twin ShareRoom",
     RoomNumber: "313",
     description: "Ideal for solo travelers. Compact, comfortable and efficient.",
-    features: ["Bed", "Free Wi-Fi", "TV", "Air Conditioning"],
+    features: ["Bed", "TV", "Air Conditioning"],
     price: 2500,
     tag: "Best Seller",
     location: "Jaggayyapeta",
     rating: 4.5,
      image: 
-      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop"
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897614/twinshare1_lvbllg.jpg"
   },
   {
     name: "Standrad Room",
     RoomNumber: "306",
     description: "Ideal for solo travelers. Compact, comfortable and efficient.",
-    features: ["Bed", "Free Wi-Fi", "TV", "Air Conditioning"],
+    features: ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply"],
     price: 2500,
     tag: "Best Seller",
     location: "Jaggayyapeta",
     rating: 4.5,
      image: 
-      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop"
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761833369/hotelbed_feytbk.jpg"
   },
   {
     name: "Standrad Room",
     RoomNumber: "307",
     description: "Ideal for solo travelers. Compact, comfortable and efficient.",
-    features: ["Bed", "Free Wi-Fi", "TV", "Air Conditioning"],
+    features: ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply"],
     price: 2500,
     tag: "Best Seller",
     location: "Jaggayyapeta",
     rating: 4.5,
      image: 
-      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop"
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761833369/hotelbed_feytbk.jpg"
   },
    {
     name: "Standrad Room",
     RoomNumber: "308",
     description: "Ideal for solo travelers. Compact, comfortable and efficient.",
-    features: ["Bed", "Free Wi-Fi", "TV", "Air Conditioning"],
+    features: ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply"],
     price: 2500,
     tag: "Best Seller",
     location: "Jaggayyapeta",
     rating: 4.5,
      image: 
-      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop"
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761833369/hotelbed_feytbk.jpg"
   },
   {
     name: "Standrad Room",
     RoomNumber: "309",
     description: "A comfortable and stylish room designed for two guests.",
-    features: ["2 Single Beds", "Free Wi-Fi", "TV", "Air Conditioning"],
+    features:  ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply"],
     price: 2500,
     tag: "Popular",
     location: "Jaggayyapeta",
     rating: 4.3,
      image: 
-      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop"
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761833369/hotelbed_feytbk.jpg"
   },
   {
     name: "Standrad Room",
     RoomNumber: "310",
     description: "A cozy and well-furnished room designed for a comfortable stay.",
-    features: ["Bed", "Wi-Fi", "TV"],
+    features: ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply"],
     price: 2500,
     tag: "Budget Friendly",
     location: "Jaggayyapeta",
     rating: 4.0,
      image: 
-      "https://images.unsplash.com/photo-1698945298325-8902550a45dd?q=80&w=1931&auto=format&fit=crop"
+      "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761833369/hotelbed_feytbk.jpg"
   },
   {
     name: "Standrad Room",
     RoomNumber: "311",
     description: "Ideal for solo travelers. Compact, comfortable and efficient.",
-    features: ["Bed", "Free Wi-Fi", "TV", "Air Conditioning"],
+    features: ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply"],
     price: 2500,
     tag: "Best Seller",
     location: "Jaggayyapeta",
     rating: 4.5,
-     image: 
-     [primium1]
+     image:"https://res.cloudinary.com/dd4oiwnep/image/upload/v1761833369/hotelbed_feytbk.jpg"
   },
 ];
 
 const featureIcons = {
+  Bed: <Bed className="w-4 h-4 inline-block text-gray-600 mr-1" />,
+ 
   "TV": <Monitor className="w-4 h-4 inline-block text-gray-600 mr-1" />,
-  "Free Wi-Fi": <Wifi className="w-4 h-4 inline-block text-gray-600 mr-1" />,
-  "Wi-Fi": <Wifi className="w-4 h-4 inline-block text-gray-600 mr-1" />,
   "Air Conditioning": <Snowflake className="w-4 h-4 inline-block text-gray-600 mr-1" />,
   "AC": <Snowflake className="w-4 h-4 inline-block text-gray-600 mr-1" />,
   "1 Single Bed": <BedSingle className="w-4 h-4 inline-block text-gray-600 mr-1" />,

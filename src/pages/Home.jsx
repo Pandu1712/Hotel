@@ -2,47 +2,18 @@ import React, { useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import FeatureGrid from '../components/FeatureGrid';
-import hotel1 from '../assets/images/hotel1.jpg';
-import hotel2 from '../assets/images/hotel2.jpg';
-import hotel3 from '../assets/images/hotel3.jpg';
-import hotel4 from '../assets/images/hotel4.jpg';
-import ReviewCarousel from '../components/ReviewCarousel';
 import RoomTypes from '../components/Roomtypes';
 const BookingForm = () => {
     const [arrival, setArrival] = useState('');
     const [departure, setDeparture] = useState('');
     const [rooms, setRooms] = useState(1);
-    const [adults, setAdults] = useState(1);
-    const [children, setChildren] = useState(1);
-
+   
     const handleSubmit = (e) => {
         e.preventDefault();
         alert(`Booking from ${arrival} to ${departure} for ${rooms} room(s)`);
         // Replace alert with real booking logic/API call
     };
-    const features = [
-        {
-            title: 'Accommodation',
-            desc: 'Experience our luxurious rooms with modern amenities and elegant interiors.',
-            image: 'https://source.unsplash.com/600x400/?hotel,room',
-        },
-        {
-            title: 'Events',
-            desc: 'Perfect venues for weddings, conferences, and corporate meetings.',
-            image: 'https://source.unsplash.com/600x400/?event,conference',
-        },
-        {
-            title: 'Dining',
-            desc: 'Savor gourmet dishes crafted by top chefs in our fine dining spaces.',
-            image: 'https://source.unsplash.com/600x400/?restaurant,food',
-        },
-        {
-            title: 'Parking',
-            desc: 'Secure and spacious parking available 24/7 for all guests.',
-            image: 'https://source.unsplash.com/600x400/?parking,garage',
-        },
-    ];
-  
+    
 }; 
 
 const Home = () => {
@@ -58,9 +29,12 @@ const Home = () => {
                     transitionTime={800}
                     className="w-full"
                 >
-                    {[{ img: hotel1, label: 'Premium Rooms' },
-                    { img: hotel2, label: 'Twin Share' },
-                    { img: hotel3, label: 'Standrad Rooms' }]
+                    {[{ img: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761899316/hotel5_pllny7.jpg", label: 'Location' },
+                    { img: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761899316/otel4_sel2pq.jpg", label: 'FunctionHall' },
+                    { img: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761899315/hotel2_mfvrdz.jpg", label: 'Wedding Hall' },
+                { img: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897624/prebed2_fzmgv2.jpg", label: 'Premium Rooms' },
+                    { img: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897614/twinshare1_lvbllg.jpg", label: 'Twin Share' },
+                    { img: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897614/waiting_quwthc.jpg", label: 'Standrad Rooms' }]
                         .map(({ img, label }, i) => (
                             <div className="relative" key={i}>
                                 <img
@@ -114,7 +88,7 @@ const Home = () => {
             {/* Hotel Info Section */}
             <div className="flex flex-col md:flex-row items-center justify-center gap-8 p-8 bg-white">
                 <div className="md:w-1/2 w-full">
-                    <img src={hotel4} alt="Panda Hotel" className="w-full rounded-tl-full shadow-md" />
+                    <img src="https://res.cloudinary.com/dd4oiwnep/image/upload/v1761899316/hotel5_pllny7.jpg" alt="Panda Hotel" className="w-full rounded-tl-full shadow-md" />
                 </div>
                 <div className="md:w-1/2 w-full text-center md:text-left">
                     <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-4xl font-semibold text-[#143447] mb-2">
@@ -144,9 +118,9 @@ const Home = () => {
             <FeatureGrid />
 
             <RoomTypes />
-            <ReviewCarousel />\
+
             {/* Location */}
-            <div className="max-w-6xl mx-auto px-4 py-8 mt-[-50px]"  >
+            <div className="max-w-6xl mx-auto px-4 py-8 mt-[30px]"  >
                 <h2 className="text-4xl font-semibold text-center text-[#143447] mb-12">Meet Here</h2>
                 <div className="relative w-full h-[400px] rounded-lg overflow-hidden">
                     <iframe

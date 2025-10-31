@@ -27,10 +27,11 @@ const RoomDetails = () => {
 ---------------------------
 👤 *Name:* ${name || "-"}
 📞 *Contact:* ${contact || "-"}
-🏠 *Room:* ${room.name} (${room.RoomNumber})
+🏠 *Room:* ${room.name}
 📍 *Location:* ${room.location || "Not specified"}
 💰 *Price:* ₹${room.price}
 📅 *Booking Date:* ${bookingDate}
+
 ---------------------------
 `;
     const encodedMessage = encodeURIComponent(message.trim());

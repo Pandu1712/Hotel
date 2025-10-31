@@ -7,7 +7,7 @@ import ScrollToTop from "../components/ScrollToTop";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
-import Gallery from "../pages/Gallery";
+
 
 // Room and Booking Pages
 import RoomsList from "../pages/RoomsList";
@@ -24,7 +24,7 @@ const AppRoutes = () => (
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/gallery" element={<Gallery />} />
+       
 
         {/* 🏨 Accommodation Categories */}
         <Route

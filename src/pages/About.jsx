@@ -34,7 +34,7 @@ const AboutUs = () => {
       {/* Our Story */}
       <section className="py-16 px-6 md:px-20 grid md:grid-cols-2 gap-12 items-center">
         <img
-          src="https://images.unsplash.com/photo-1603072387865-e48a022fc541?q=80&w=2070&auto=format&fit=crop"
+          src="https://res.cloudinary.com/dd4oiwnep/image/upload/v1761833369/hotelbed_feytbk.jpg"
           alt="Hotel Lobby"
           className="rounded-tr-full shadow-xl"
         />
@@ -69,8 +69,8 @@ const AboutUs = () => {
             icon: <MapPin className="mx-auto mb-4 text-[#f8de71]" size={40} />,
           },
           {
-            title: "Award-Winning Cuisine",
-            desc: "Our chefs bring flavor and finesse to your plate.",
+            title: "Security",
+            desc: "Our Security To Help For Good Sleep.",
             icon: <Utensils className="mx-auto mb-4 text-[#f8de71]" size={40} />,
           },
         ].map((feature, index) => (
@@ -156,12 +156,12 @@ const AboutUs = () => {
         <div className="grid md:grid-cols-2 gap-10">
           {[
             {
-              quote: "One of the best stays I've had. The service was exceptional, and the rooms were stunning!",
-              name: "Alicia Morgan",
+              quote: "Amazing stay! The staff were genuinely welcoming and helpful throughout, the room was spotless and comfortable, and everything ran smoothly from check-in to checkout. Would happily stay again",
+              name: "Pabbati dinesh",
             },
             {
-              quote: "Truly luxurious. From the food to the amenities — 5 stars all the way.",
-              name: "Carlos Rivera",
+              quote: "Had a great experience, friendly staff neat rooms highly recommend.",
+              name: "Mallikârjun ReDdy",
             },
           ].map((review, index) => (
             <div key={index} className="bg-[#214d66] p-6 rounded-2xl">

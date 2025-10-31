@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 const reviews = [
     {
         quote: "An unforgettable experience! The service was impeccable and the views were breathtaking.",
-        author: "John Doe",
+        author: "Mallikârjun ReDdy",
         role: "Travel Blogger",
         avatar: "https://i.pravatar.cc/100?img=3",
         rating: 5,

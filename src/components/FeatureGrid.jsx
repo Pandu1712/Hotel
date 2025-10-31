@@ -1,37 +1,32 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-import AcommoImg from "../assets/images/Acommo.jpg";
-import EventImg from "../assets/images/Event.jpg";
-import DiningImg from "../assets/images/Dining.jpg";
-import ParkingImg from "../assets/images/Parking.jpg";
-
 const features = [
     {
         title: "Accommodation",
         desc: "Experience our luxurious rooms with modern amenities and elegant interiors.",
-        image: AcommoImg,
+        image: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761898926/Acommo_lqowee.jpg",
         path: "/accommodation",
         icon: "🏨",
     },
     {
         title: "Events",
         desc: "Perfect venues for weddings, conferences, and corporate meetings.",
-        image: EventImg,
+        image: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761898932/Event_om3c7p.jpg",
         path: "/events",
         icon: "🎉",
     },
     {
         title: "Dining",
         desc: "Savor gourmet dishes crafted by top chefs in our fine dining spaces.",
-        image: DiningImg,
+        image: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761898925/Dining_t7oqdv.jpg",
         path: "/dining",
         icon: "🍽️",
     },
     {
         title: "Parking",
         desc: "Secure and spacious parking available 24/7 for all guests.",
-        image: ParkingImg,
+        image: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761898919/Parking_hmmmwm.jpg",
         path: "/parking",
         icon: "🅿️",
     },
