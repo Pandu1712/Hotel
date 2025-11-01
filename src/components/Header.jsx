@@ -61,11 +61,7 @@ const Header = () => {
         <header className="bg-[#143447] shadow sticky top-0 z-50 text-white">
             <div className="max-w-screen-xl mx-auto px-4 py-4 flex items-center justify-between">
                 {/* Logo */}
-                <div className="flex items-center gap-3 cursor-pointer">
-                   <img src={logo} alt="Logo" className="w-20 h-20 rounded-full object-cover" />
-                    <span className="text-xl font-bold">Hotel Grand VadhuVar</span>
-                </div>
-
+               
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex items-center gap-6">
                     {navItems.map((item, index) => (
