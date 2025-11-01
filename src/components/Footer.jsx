@@ -8,7 +8,7 @@ import {
   FaTwitter, 
   FaTripadvisor 
 } from 'react-icons/fa';
-import logo from "../assets/images/GV PNG Logo.png"; // ✅ Update the path to your actual logo
+
 
 const Footer = () => {
   return (
@@ -18,11 +18,7 @@ const Footer = () => {
         {/* 🏨 Hotel Info with Logo */}
         <div>
           <div className="flex items-center gap-4 mb-4">
-            <img
-              src={logo}
-              alt="Hotel Grand VadhuVar Logo"
-              className="w-24 h-24 rounded-full border-2 border-[#f8de71] object-cover"
-            />
+           
             <h2 className="text-2xl font-bold text-[#f8de71]">
               Hotel Grand VadhuVar
             </h2>

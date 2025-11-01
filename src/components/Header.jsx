@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { useLocation } from 'react-router-dom';
-import logo from "../assets/images/GV PNG Logo.png";
+
 
 const Header = () => {
     const [activeDropdownDesktop, setActiveDropdownDesktop] = useState(null);
