@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { useLocation } from 'react-router-dom';
-
+const logo = "https://res.cloudinary.com/dd4oiwnep/image/upload/v1762147889/GvLogo_v13bxr.jpg";
 
 const Header = () => {
     const [activeDropdownDesktop, setActiveDropdownDesktop] = useState(null);
@@ -61,7 +61,11 @@ const Header = () => {
         <header className="bg-[#143447] shadow sticky top-0 z-50 text-white">
             <div className="max-w-screen-xl mx-auto px-4 py-4 flex items-center justify-between">
                 {/* Logo */}
-               
+                <div className="flex items-center gap-3 cursor-pointer">
+                   <img src={logo} alt="Logo" className="w-12 h-12 rounded-full object-cover" />
+                    <span className="text-xl font-bold">Hotel Grand VadhuVar</span>
+                </div>
+
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex items-center gap-6">
                     {navItems.map((item, index) => (
