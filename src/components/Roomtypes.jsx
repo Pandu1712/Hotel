@@ -126,7 +126,7 @@ const roomTypes = [
       "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897614/twinshare1_lvbllg.jpg",loading: "lazy",
   },
   {
-    name: "Standrad Room",
+    name: "Standard Room",
     RoomNumber: "306",
     description: "Ideal for solo travelers. Compact, comfortable and efficient.",
     features: ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply","Intercom"],
@@ -138,7 +138,7 @@ const roomTypes = [
       "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761833369/hotelbed_feytbk.jpg",loading: "lazy",
   },
   {
-    name: "Standrad Room",
+    name: "Standard Room",
     RoomNumber: "307",
     description: "Ideal for solo travelers. Compact, comfortable and efficient.",
     features: ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply","Intercom"],
@@ -150,7 +150,7 @@ const roomTypes = [
       "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761833369/hotelbed_feytbk.jpg",loading: "lazy",
   },
    {
-    name: "Standrad Room",
+    name: "Standard Room",
     RoomNumber: "308",
     description: "Ideal for solo travelers. Compact, comfortable and efficient.",
     features: ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply","Intercom"],
@@ -162,7 +162,7 @@ const roomTypes = [
       "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761833369/hotelbed_feytbk.jpg",loading: "lazy",
   },
   {
-    name: "Standrad Room",
+    name: "Standard Room",
     RoomNumber: "309",
     description: "A comfortable and stylish room designed for two guests.",
     features:  ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply","Intercom"],
@@ -174,7 +174,7 @@ const roomTypes = [
       "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761833369/hotelbed_feytbk.jpg",loading: "lazy",
   },
   {
-    name: "Standrad Room",
+    name: "Standard Room",
     RoomNumber: "310",
     description: "A cozy and well-furnished room designed for a comfortable stay.",
     features: ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply","Intercom"],
@@ -186,7 +186,7 @@ const roomTypes = [
       "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761833369/hotelbed_feytbk.jpg",loading: "lazy",
   },
   {
-    name: "Standrad Room",
+    name: "Standard Room",
     RoomNumber: "311",
     description: "Ideal for solo travelers. Compact, comfortable and efficient.",
     features: ["Bed", "TV", "Air Conditioning","Extra Bed – Additional Charges Apply","Intercom"],

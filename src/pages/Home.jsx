@@ -4,10 +4,10 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import FeatureGrid from '../components/FeatureGrid';
 import RoomTypes from '../components/Roomtypes';
 const BookingForm = () => {
-   
 
-    
-}; 
+
+
+};
 
 const Home = () => {
     return (
@@ -25,7 +25,7 @@ const Home = () => {
                     {[{ img: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761899316/hotel5_pllny7.jpg", label: 'Location' },
                     { img: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761899316/otel4_sel2pq.jpg", label: 'FunctionHall' },
                     { img: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761899315/hotel2_mfvrdz.jpg", label: 'Wedding Hall' },
-                { img: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897624/prebed2_fzmgv2.jpg", label: 'Premium Rooms' },
+                    { img: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897624/prebed2_fzmgv2.jpg", label: 'Premium Rooms' },
                     { img: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897614/twinshare1_lvbllg.jpg", label: 'Twin Share' },
                     { img: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897614/waiting_quwthc.jpg", label: 'Front Desk' }]
                         .map(({ img, label }, i) => (
@@ -60,7 +60,7 @@ const Home = () => {
                         <p className="text-gray-600 mb-4">
                             "Enjoy a spacious, elegantly designed room with modern interiors and warm lighting. Step onto your private balcony for fresh air and beautiful views. Perfect for comfort, style, and a touch of open-air luxury."
                         </p>
-                       {/*  <a href="/accommodation" className="text-[#b69d3a] hover:underline">Explore Rooms</a> */}
+                        {/*  <a href="/accommodation" className="text-[#b69d3a] hover:underline">Explore Rooms</a> */}
                     </div>
                     <div className="bg-white p-6 rounded-lg shadow-lg">
                         <h2 className="text-2xl font-semibold mb-4 text-[#143447]">Twin Share</h2>
@@ -70,43 +70,68 @@ const Home = () => {
                         {/* <a href="/dining" className="text-[#b69d3a] hover:underline">View Menu</a> */}
                     </div>
                     <div className="bg-white p-6 rounded-lg shadow-lg">
-                        <h2 className="text-2xl font-semibold mb-4 text-[#143447]">Standrad Room</h2>
+                        <h2 className="text-2xl font-semibold mb-4 text-[#143447]">Standard Room</h2>
                         <p className="text-gray-600 mb-4">
                             "A cozy and well-furnished room designed for a comfortable stay. Features essential amenities and modern interiors for a pleasant experience. Perfect for budget-friendly travelers who value simplicity and comfort."
                         </p>
-                      {/*   <a href="/events" className="text-[#b69d3a] hover:underline">Book Event Space</a> */}
+                        {/*   <a href="/events" className="text-[#b69d3a] hover:underline">Book Event Space</a> */}
                     </div>
                 </div>
             </div>
             {/* Hotel Info Section */}
             <div className="flex flex-col md:flex-row items-center justify-center gap-8 p-8 bg-white">
-                <div className="md:w-1/2 w-full">
-                    <img src="https://res.cloudinary.com/dd4oiwnep/image/upload/v1761899316/hotel5_pllny7.jpg" alt="Panda Hotel" className="w-full rounded-tl-full shadow-md" />
-                </div>
-                <div className="md:w-1/2 w-full text-center md:text-left">
-                    <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-4xl font-semibold text-[#143447] mb-2">
-                        Hotel Grand VadhuVar
-                    </h2>
+  {/* 🖼️ Left Side - Image */}
+  <div className="md:w-1/2 w-full">
+    <img
+      src="https://res.cloudinary.com/dd4oiwnep/image/upload/v1761899315/hotel1_ckm1od.jpg"
+      alt="Hotel Grand VadhuVar"
+      className="w-full rounded-tl-[120px] shadow-lg object-cover"
+    />
+  </div>
 
-                    <p className="text-gray-600 italic mb-4">Experience comfort amidst luxury</p>
-                    <div className="h-[2px] w-16 bg-gray-300 mx-auto md:mx-0 mb-4"></div>
-                    <p className="text-gray-700 mb-4">
-                        Spoil yourself in 5-star seafront luxury at Novotel Visakhapatnam Varun Beach hotel.
-                        Spare contemporary design makes your room a calm haven, and picture windows offer you
-                        dazzling Bay of Bengal views. Rise and shine with a dip in the infinity pool and
-                        breakfast with an ocean backdrop at the lavish buffet spread at Novotel.
-                    </p>
-                    <p className="text-gray-700">
-                        The hotel shares a close proximity with the city Railway station, Rushikonda Beach,
-                        Vizag Port and the airport. The popular Submarine Museum is just a walk away. The
-                        hotel’s city centre location makes it approachable from industrial and business hubs.
-                        Novotel Visakhapatnam forms part of a complex consisting of an INOX multiplex, night
-                        club and a shopping mall. Novotel Visakhapatnam Varun Beach is among the only hotels in
-                        Visakhapatnam that is ocean facing. The hotel offers calming views of the sea from
-                        every nook and corner.
-                    </p>
-                </div>
-            </div>
+  {/* 🏨 Right Side - Text */}
+  <div className="md:w-1/2 w-full text-center md:text-left">
+    <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-[#143447] mb-2">
+      Hotel Grand VadhuVar
+    </h2>
+
+    <p className="text-gray-600 italic mb-4">
+      Experience comfort amidst luxury
+    </p>
+
+    <div className="h-[2px] w-20 bg-[#f8de71] mx-auto md:mx-0 mb-4"></div>
+
+    <p className="text-gray-700 mb-4 leading-relaxed">
+      Nestled in the heart of <span className="font-semibold text-[#143447]">Jaggayyapeta</span>, 
+      <strong> Hotel Grand VadhuVar </strong> redefines hospitality with a perfect blend of elegance, comfort, 
+      and world-class service. Designed for both leisure and business travelers, our hotel offers a serene retreat 
+      where luxury meets tradition. Each room is thoughtfully designed with modern amenities, ensuring a relaxing 
+      and memorable stay.
+    </p>
+
+    <p className="text-gray-700 leading-relaxed">
+      Whether you’re here for a family celebration, a business trip, or a peaceful getaway, 
+      <strong> Hotel Grand VadhuVar </strong> provides a warm ambiance and personalized care to make you feel at home. 
+      Enjoy exquisite dining, sophisticated interiors, and top-tier facilities that reflect the essence of 
+      Andhra Pradesh’s hospitality.
+    </p>
+
+    <div className="mt-6 text-gray-700 leading-relaxed space-y-2">
+      <p>
+        <span className="font-semibold text-[#143447]">📍 Address:</span>  
+        S.No - 300/3, 3rd Floor, Tumuluri’s Plaza, Sathya Electronics Building,  
+        Jaggayyapeta, NTR District, Andhra Pradesh – <strong>521175</strong>
+      </p>
+      <p>
+        <span className="font-semibold text-[#143447]">📞 Phone:</span> +91 94920 47799
+      </p>
+      <p>
+        <span className="font-semibold text-[#143447]">✉️ Email:</span> hotelgrandvadhuvar@gmail.com
+      </p>
+    </div>
+  </div>
+</div>
+
 
             <FeatureGrid />
 

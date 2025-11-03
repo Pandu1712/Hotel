@@ -5,36 +5,62 @@ const AboutUs = () => {
   return (
     <div className="bg-white text-[#143447]">
       {/* Hero Section */}
-      <section
-        className="relative h-auto md:h-[60vh] flex flex-col items-center justify-center bg-cover bg-center px-4 py-12 md:py-0"
-        style={{
-          backgroundImage: "url('https://source.unsplash.com/1600x900/?luxury,hotel')",Loading: "lazy",
-        }}
-      >
-        <div className="absolute bg-"></div>
-        <div className="relative z-10 max-w-4xl text-center">
-          <h1 className="text-3xl md:text-5xl font-semibold text-[#143447] mb-6">About Our Hotel</h1>
-          <p className="text-base md:text-lg text-[#143447] leading-relaxed">
-            Nestled in the heart of the city, Hotel Grand VadhuVar redefines luxury, comfort, and hospitality. Designed for both
-            leisure and business travelers, our hotel is a sanctuary where modern elegance meets timeless charm.
-            <br /><br />
-            From the moment you step inside, you’re greeted by a world of sophistication. Our thoughtfully designed rooms
-            and suites offer the perfect balance of style and serenity, equipped with world-class amenities to ensure your
-            stay is as comfortable as it is memorable.
-            <br /><br />
-            Whether you're savoring gourmet dishes in our fine dining restaurant, relaxing in our rooftop lounge with
-            panoramic views, or rejuvenating at our spa and wellness center — every experience is curated with precision
-            and care.
-            <br /><br />
-            Our mission is simple: To create unforgettable moments through exceptional service and heartfelt hospitality.
-          </p>
+      <section>
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8 p-8 bg-white">
+          {/* 🖼️ Left Side - Image */}
+         
+
+          {/* 🏨 Right Side - Text */}
+          <div className="md:w-1/2 w-full text-center md:text-left">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold text-[#143447] mb-2">
+              Hotel Grand VadhuVar
+            </h2>
+
+            <p className="text-gray-600 italic mb-4">
+              Experience comfort amidst luxury
+            </p>
+
+            <div className="h-[2px] w-20 bg-[#f8de71] mx-auto md:mx-0 mb-4"></div>
+
+            <p className="text-gray-700 mb-4 leading-relaxed">
+              Nestled in the heart of <span className="font-semibold text-[#143447]">Jaggayyapeta</span>,
+              <strong> Hotel Grand VadhuVar </strong> redefines hospitality with a perfect blend of elegance, comfort,
+              and world-class service. Designed for both leisure and business travelers, our hotel offers a serene retreat
+              where luxury meets tradition. Each room is thoughtfully designed with modern amenities, ensuring a relaxing
+              and memorable stay.
+            </p>
+
+            <p className="text-gray-700 leading-relaxed">
+              Whether you’re here for a family celebration, a business trip, or a peaceful getaway,
+              <strong> Hotel Grand VadhuVar </strong> provides a warm ambiance and personalized care to make you feel at home.
+              Enjoy exquisite dining, sophisticated interiors, and top-tier facilities that reflect the essence of
+              Andhra Pradesh’s hospitality.
+            </p>
+
+            <div className="mt-6 text-gray-700 leading-relaxed space-y-2">
+              <p>
+                <span className="font-semibold text-[#143447]">📍 Address:</span>
+                S.No - 300/3, 3rd Floor, Tumuluri’s Plaza, Sathya Electronics Building,
+                Jaggayyapeta, NTR District, Andhra Pradesh – <strong>521175</strong>
+              </p>
+              <p>
+                <span className="font-semibold text-[#143447]">📞 Phone:</span> +91 94920 47799
+              </p>
+              <p>
+                <span className="font-semibold text-[#143447]">✉️ Email:</span> hotelgrandvadhuvar@gmail.com
+              </p>
+            </div>
+
+            
+          </div>
+          
         </div>
       </section>
 
       {/* Our Story */}
       <section className="py-16 px-6 md:px-20 grid md:grid-cols-2 gap-12 items-center">
         <img
-          src="https://res.cloudinary.com/dd4oiwnep/image/upload/v1761833369/hotelbed_feytbk.jpg"loading="lazy"
+          src="https://res.cloudinary.com/dd4oiwnep/image/upload/v1761833369/hotelbed_feytbk.jpg" loading="lazy"
           alt="Hotel Lobby"
           className="rounded-tr-full shadow-xl"
         />
@@ -55,36 +81,36 @@ const AboutUs = () => {
 
       {/* Why Choose Us */}
       <section className="py-16 px-6 md:px-20 bg-[#1a3e52]">
-      <h2 className="text-3xl font-bold text-[#f8de71] text-center mb-10">Why Choose Us</h2>
-      <div className="grid md:grid-cols-3 gap-8 text-center">
-        {[
-          {
-            title: "24/7 Service",
-            desc: "Round-the-clock assistance for all your needs.",
-            icon: <Clock className="mx-auto mb-4 text-[#f8de71]" size={40} />,
-          },
-          {
-            title: "Prime Location",
-            desc: "Easily accessible from the airport and city attractions.",
-            icon: <MapPin className="mx-auto mb-4 text-[#f8de71]" size={40} />,
-          },
-          {
-            title: "Security",
-            desc: "Our Security To Help For Good Sleep.",
-            icon: <Utensils className="mx-auto mb-4 text-[#f8de71]" size={40} />,
-          },
-        ].map((feature, index) => (
-          <div
-            key={index}
-            className="p-6 bg-[#214d66] rounded-2xl hover:scale-105 transition transform duration-300"
-          >
-            {feature.icon}
-            <h3 className="text-2xl font-semibold mb-2 text-[#f8de71]">{feature.title}</h3>
-            <p className="text-gray-300">{feature.desc}</p>
-          </div>
-        ))}
-      </div>
-    </section>
+        <h2 className="text-3xl font-bold text-[#f8de71] text-center mb-10">Why Choose Us</h2>
+        <div className="grid md:grid-cols-3 gap-8 text-center">
+          {[
+            {
+              title: "24/7 Service",
+              desc: "Round-the-clock assistance for all your needs.",
+              icon: <Clock className="mx-auto mb-4 text-[#f8de71]" size={40} />,
+            },
+            {
+              title: "Prime Location",
+              desc: "Easily accessible from the airport and city attractions.",
+              icon: <MapPin className="mx-auto mb-4 text-[#f8de71]" size={40} />,
+            },
+            {
+              title: "Security",
+              desc: "Our Security To Help For Good Sleep.",
+              icon: <Utensils className="mx-auto mb-4 text-[#f8de71]" size={40} />,
+            },
+          ].map((feature, index) => (
+            <div
+              key={index}
+              className="p-6 bg-[#214d66] rounded-2xl hover:scale-105 transition transform duration-300"
+            >
+              {feature.icon}
+              <h3 className="text-2xl font-semibold mb-2 text-[#f8de71]">{feature.title}</h3>
+              <p className="text-gray-300">{feature.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
 
       {/* Our Values */}
       <section className="py-16 px-6 md:px-20 bg-[#1a3e52]">

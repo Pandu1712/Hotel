@@ -30,7 +30,7 @@ const Header = () => {
             submenu: [
                 { name: 'Premium Rooms', path: '/accommodation/premiumrooms' },
                 { name: 'Twin Share Rooms', path: '/accommodation/twinshareroom' },
-                { name: 'Standrad Rooms', path: '/accommodation/standradroom' },
+                { name: 'Standard Rooms', path: '/accommodation/standradroom' },
                
             ]
         },
