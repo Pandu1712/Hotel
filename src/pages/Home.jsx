@@ -113,7 +113,7 @@ const Home = () => {
     <p className="text-gray-700 leading-relaxed">
       Whether you’re here for a family celebration, a business trip, or a peaceful getaway, 
       <strong> Hotel Grand VadhuVar </strong> provides a warm ambiance and personalized care to make you feel at home. 
-      Enjoy exquisite dining, sophisticated interiors, and top-tier facilities that reflect the essence of 
+      Enjoy exquisite  sophisticated interiors, and top-tier facilities that reflect the essence of 
       Andhra Pradesh’s hospitality.
     </p>
 

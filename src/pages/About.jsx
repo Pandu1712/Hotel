@@ -118,7 +118,7 @@ const AboutUs = () => {
             },
             {
               title: "Prime Location",
-              desc: "Easily accessible from the airport and city attractions.",
+              desc: "Easily accessible from the Bus station and the National Highway.",
               icon: <MapPin className="mx-auto mb-4 text-[#f8de71]" size={48} />,
             },
             {
