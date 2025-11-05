@@ -188,8 +188,8 @@ const AboutUs = () => {
         <div className="flex justify-center">
           {[
             {
-              name: "John Doe",
-              role: "General Manager",
+              name: "Nikhil Tumuluri",
+              role: "Chairman",
               img: "https://t3.ftcdn.net/jpg/02/43/12/34/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg",
             },
           ].map((member, i) => (
