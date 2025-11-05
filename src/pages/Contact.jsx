@@ -29,7 +29,7 @@ Andhra Pradesh 
           <Phone className="w-10 h-10 mx-auto mb-4 text-[#f8de71]" />
           <h2 className="text-xl font-semibold mb-2 text-[#f8de71]">Phone</h2>
            <p className="font-semibold">Tumuluri’s plaza, sathya electronics building</p>
-          <p>303.428.20ff<br />303.202.0646 (fax)</p>
+          
           <div className="mt-4">
            <p>S.No - 300/3, <br />jaggayyapeta</p>
         
@@ -43,7 +43,8 @@ Andhra Pradesh 
           <Mail className="w-10 h-10 mx-auto mb-4 text-[#f8de71]" />
           <h2 className="text-xl font-semibold mb-2 text-[#f8de71]">Email</h2>
           <p><span className="font-semibold">Proposals:</span><br />hotelgrandvadhuvar@gmail.com</p>
-          <p className="mt-4"><span className="font-semibold">Service Calls:</span><br />hotelgrandvadhuvar@gmail.com</p>
+          <p className="mt-4"><span className="font-semibold">Service Calls:</span><br />9492047799 <br/>
+          9492057799</p>
          {/*  <p className="mt-4"><span className="font-semibold">Careers:</span><br />careers@wellfieldcontracting.com</p> */}
         </div>
       </div>

@@ -38,7 +38,14 @@ const Footer = () => {
 
           <div className="flex gap-4 mt-5 text-lg">
             <FaFacebookF className="cursor-pointer hover:text-[#f8de71] transition" />
-            <FaInstagram className="cursor-pointer hover:text-[#f8de71] transition" />
+           <a
+  href="https://www.instagram.com/hotelgrandvadhuvar?igsh=Y2ZhbGF1YzFtNDA3&utm_source=qr"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <FaInstagram className="cursor-pointer hover:text-[#f8de71] transition" />
+</a>
+
             <FaTwitter className="cursor-pointer hover:text-[#f8de71] transition" />
             <FaTripadvisor className="cursor-pointer hover:text-[#f8de71] transition" />
           </div>
@@ -82,6 +89,7 @@ const Footer = () => {
             <li className="flex items-center gap-3">
               <FaPhoneAlt className="text-[#f8de71]" />
               <span>+91 9492047799</span>
+              <span>+91 9492057799</span>
             </li>
             <li className="flex items-center gap-3">
               <FaEnvelope className="text-[#f8de71]" />
