@@ -28,7 +28,7 @@ const Home = () => {
                     { img: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897624/prebed2_fzmgv2.jpg", label: 'Premium Rooms' },
                     { img: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897614/twinshare1_lvbllg.jpg", label: 'Twin Share' },
                     { img: "https://res.cloudinary.com/dd4oiwnep/image/upload/v1761897614/waiting_quwthc.jpg", label: 'Front Desk' },
-                  {img:"https://res.cloudinary.com/dd4oiwnep/image/upload/v1762333819/WhatsApp_Image_2025-11-04_at_17.06.50_cd878061_bvcfvy.jpg", label:'Reception Area'}]
+                    ]
                         .map(({ img, label }, i) => (
                             <div className="relative" key={i}>
                                 <img

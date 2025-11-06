@@ -9,7 +9,7 @@ const AboutUs = () => {
         {/* Left Side - Image */}
         <div className="md:w-1/2 w-full">
           <img
-            src="https://res.cloudinary.com/dd4oiwnep/image/upload/v1762333819/WhatsApp_Image_2025-11-04_at_17.06.50_f1618e12_b65hsv.jpg"
+            src="https://res.cloudinary.com/dd4oiwnep/image/upload/v1761899316/otel4_sel2pq.jpg"
             alt="Hotel Grand Vadhuvar"
             className="rounded-3xl shadow-2xl object-cover w-full h-[400px] md:h-[500px] hover:scale-[1.03] transition-transform duration-700"
             loading="lazy"
